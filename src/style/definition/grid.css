@@ -1,0 +1,16 @@
+:root {
+  --grid-base: 8px;
+
+  --grid-quater: calc(var(--grid-base) / 4);
+  --grid-half: calc(var(--grid-base) / 2);
+  --grid-one: var(--grid-base);
+  --grid-two: calc(var(--grid-base) * 2);
+  --grid-three: calc(var(--grid-base) * 3);
+  --grid-four: calc(var(--grid-base) * 4);
+  --grid-five: calc(var(--grid-base) * 5);
+  --grid-six: calc(var(--grid-base) * 6);
+  --grid-seven: calc(var(--grid-base) * 7);
+  --grid-eight: calc(var(--grid-base) * 8);
+  --grid-nine: calc(var(--grid-base) * 9);
+  --grid-ten: calc(var(--grid-base) * 10);
+}

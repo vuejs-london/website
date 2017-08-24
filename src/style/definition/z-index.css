@@ -1,0 +1,5 @@
+:root {
+  --z-index-base: 0;
+  --z-index-navbar: 10;
+  --z-index-modal: 20;
+}

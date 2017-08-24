@@ -1,0 +1,3 @@
+:root {
+  --page-width: calc(var(--grid-ten) * 12);
+}

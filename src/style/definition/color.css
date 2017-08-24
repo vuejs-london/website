@@ -1,0 +1,18 @@
+:root {
+  --color-white: #fff;
+  --color-white--transparent: #fffd;
+  --color-white--offset: #fcfcfc;
+
+  --color-green: #3bb881;
+  --color-green--dark: #35a773;
+
+  --color-text: #35485e;
+  --color-text--light: #636970;
+
+  --color-grey: #d3d3d3;
+  --color-grey--light: #efefef;
+
+  --color-black--overlay: #000c;
+  --color-black--shadow: #0004;
+  --color-black--shadow-light: rgba(0, 0, 0, 0.067);
+}
