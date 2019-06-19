@@ -2,7 +2,7 @@
   <button
     :class="{ 'c-burger--active': active }"
     role="navigation"
-    aria-label="burger-menu"
+    aria-label="Open the menu"
     class="c-burger"
   >
     <div class="c-burger__bar"></div>
