@@ -31,12 +31,23 @@ export default {
       { to: '/workshops', text: 'Workshops' },
       { to: '/cfp', text: 'CFP' },
       { to: '/diversity', text: 'Diversity' },
-      { href: 'https://shop.spreadshirt.co.uk/vue-london/', target: '_blank', text: 'Store' },
-      { href: 'https://www.meetup.com/vuejs-london/', target: '_blank', text: 'Meetup' },
+      {
+        href: 'https://shop.spreadshirt.co.uk/vue-london/',
+        rel: 'noopener',
+        target: '_blank',
+        text: 'Store',
+      },
+      {
+        href: 'https://www.meetup.com/vuejs-london/',
+        rel: 'noopener',
+        target: '_blank',
+        text: 'Meetup',
+      },
       {
         href:
           'https://join.slack.com/t/vuejsconferences/shared_invite/enQtMzY5Njg2NjA2NTAxLTU4NTA5YTViMGJiYmNhZTRmYTE2YzEwNDdhYjA2ZDJiYjE4OTZlYjcwYzFkZDkyNGNmYTU2NDczNGVhYzFiOWU',
         target: '_blank',
+        rel: 'noopener',
         text: 'Slack',
       },
       { to: '/2018', text: '2018' },
@@ -47,23 +58,40 @@ export default {
         href:
           'https://london.us16.list-manage.com/subscribe?u=1c418a486ef9ef69a14c73464&id=6450120068',
         target: '_blank',
+        rel: 'noopener',
         text: 'Newsletter',
       },
       {
         href:
           'https://join.slack.com/t/vuejsconferences/shared_invite/enQtMzY5Njg2NjA2NTAxLTU4NTA5YTViMGJiYmNhZTRmYTE2YzEwNDdhYjA2ZDJiYjE4OTZlYjcwYzFkZDkyNGNmYTU2NDczNGVhYzFiOWU',
         target: '_blank',
+        rel: 'noopener',
         text: 'Slack',
       },
-      { href: 'https://www.meetup.com/vuejs-london/', target: '_blank', text: 'Meetup' },
-      { href: 'https://shop.spreadshirt.co.uk/vue-london/', target: '_blank', text: 'Store' },
+      {
+        href: 'https://www.meetup.com/vuejs-london/',
+        rel: 'noopener',
+        target: '_blank',
+        text: 'Meetup',
+      },
+      {
+        href: 'https://shop.spreadshirt.co.uk/vue-london/',
+        rel: 'noopener',
+        target: '_blank',
+        text: 'Store',
+      },
       { to: '/2018', text: '2018' },
       { to: '/tickets', text: 'Tickets' },
       { to: '/cfp', text: 'CFP' },
       { to: '/diversity', text: 'Diversity' },
       { to: '/terms-and-conditions', text: 'Terms and Conditions' },
       { to: '/privacy-policy', text: 'Privacy Policy' },
-      { href: 'http://confcodeofconduct.com/', target: '_blank', text: 'Code of Conduct' },
+      {
+        href: 'http://confcodeofconduct.com/',
+        rel: 'noopener',
+        target: '_blank',
+        text: 'Code of Conduct',
+      },
     ]
   },
 }
