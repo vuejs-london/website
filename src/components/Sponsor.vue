@@ -1,5 +1,5 @@
 <template>
-  <anchor :href="href" class="c-sponsor" target="_blank">
+  <anchor :href="href" class="c-sponsor" rel="noopener" target="_blank">
     <img :src="image" :alt="title" class="c-sponsor__image" />
   </anchor>
 </template>

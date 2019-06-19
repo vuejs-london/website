@@ -103,51 +103,38 @@
       </p>
       <p>Examples of Cookies we use:</p>
       <list>
-        <list-item>
-          Session Cookies.&nbsp;We use Session Cookies to operate our Service.
-        </list-item>
+        <list-item>Session Cookies.&nbsp;We use Session Cookies to operate our Service.</list-item>
         <list-item>
           Preference Cookies.&nbsp;We use Preference Cookies to remember your preferences and
           various settings.
         </list-item>
-        <list-item>
-          Security Cookies.&nbsp;We use Security Cookies for security purposes.
-        </list-item>
+        <list-item>Security Cookies.&nbsp;We use Security Cookies for security purposes.</list-item>
       </list>
       <heading level="2">Use of Data</heading>
       <p>Vue.js Limited uses the collected data for various purposes:</p>
       <list>
-        <list-item>
-          To provide and maintain our Service
-        </list-item>
-        <list-item>
-          To notify you about changes to our Service
-        </list-item>
+        <list-item>To provide and maintain our Service</list-item>
+        <list-item>To notify you about changes to our Service</list-item>
         <list-item>
           To allow you to participate in interactive features of our Service when you choose to do
           so
         </list-item>
-        <list-item>
-          To provide customer support
-        </list-item>
-        <list-item>
-          To gather analysis or valuable information so that we can improve our Service
-        </list-item>
-        <list-item>
-          To monitor the usage of our Service
-        </list-item>
-        <list-item>
-          To detect, prevent and address technical issues
-        </list-item>
+        <list-item>To provide customer support</list-item>
+        <list-item
+          >To gather analysis or valuable information so that we can improve our Service</list-item
+        >
+        <list-item>To monitor the usage of our Service</list-item>
+        <list-item>To detect, prevent and address technical issues</list-item>
         <list-item>
           To provide you with news, special offers and general information about other goods,
           services and events which we offer that are similar to those that you have already
           purchased or enquired about unless you have opted not to receive such information
         </list-item>
       </list>
-      <heading level="2">
-        Legal Basis for Processing Personal Data Under General Data Protection Regulation (GDPR)
-      </heading>
+      <heading level="2"
+        >Legal Basis for Processing Personal Data Under General Data Protection Regulation
+        (GDPR)</heading
+      >
       <p>
         If you are from the European Economic Area (EEA), Vue.js Limited legal basis for collecting
         and using the personal information described in this Privacy Policy depends on the Personal
@@ -157,9 +144,10 @@
       <list>
         <list-item>We need to perform a contract with you</list-item>
         <list-item>You have given us permission to do so</list-item>
-        <list-item>
-          The processing is in our legitimate interests and it's not overridden by your rights
-        </list-item>
+        <list-item
+          >The processing is in our legitimate interests and it's not overridden by your
+          rights</list-item
+        >
         <list-item>For payment processing purposes</list-item>
         <list-item>To comply with the law</list-item>
       </list>
@@ -303,7 +291,7 @@
       <p>
         For more information on the privacy practices of Google, please visit the Google Privacy
         &amp; Terms web page:&nbsp;
-        <anchor href="https://policies.google.com/privacy?hl=en" target="_blank"
+        <anchor href="https://policies.google.com/privacy?hl=en" rel="noopener" target="_blank"
           >https://policies.google.com/privacy?hl=en</anchor
         >
       </p>
@@ -324,7 +312,7 @@
       <heading level="3">Stripe</heading>
       <p>
         Their Privacy Policy can be viewed at&nbsp;
-        <anchor href="https://stripe.com/us/privacy" target="_blank"
+        <anchor href="https://stripe.com/us/privacy" rel="noopener" target="_blank"
           >https://stripe.com/us/privacy</anchor
         >
       </p>

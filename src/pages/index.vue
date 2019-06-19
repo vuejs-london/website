@@ -1,6 +1,6 @@
 <template>
   <main>
-    <hero></hero>
+    <hero />
     <page-section>
       <form-button to="/tickets" tag="nuxt-link" class="p__tickets">Conference tickets</form-button>
       <form-button to="/workshops" tag="nuxt-link">View workshops</form-button>
@@ -13,13 +13,12 @@
 <script>
 import FormButton from '~/components/FormButton'
 import Hero from '~/components/Hero'
-import PageSection from '~/components/PageSection'
 
 export default {
   components: {
     FormButton,
     Hero,
-    PageSection,
+    PageSection: () => import('~/components/PageSection'),
   },
 
   head: {

@@ -1,5 +1,10 @@
 <template>
-  <button :class="{ 'c-burger--active': active }" class="c-burger">
+  <button
+    :class="{ 'c-burger--active': active }"
+    role="navigation"
+    aria-label="Open the menu"
+    class="c-burger"
+  >
     <div class="c-burger__bar"></div>
     <div class="c-burger__bar"></div>
     <div class="c-burger__bar"></div>

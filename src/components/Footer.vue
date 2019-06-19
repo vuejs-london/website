@@ -6,13 +6,17 @@
         <list>
           <list-item>
             Twitter:
-            <anchor variant="bold" href="https://twitter.com/vue_london" target="_blank"
+            <anchor
+              variant="bold"
+              href="https://twitter.com/vue_london"
+              rel="noopener"
+              target="_blank"
               >@vue_london</anchor
             >
           </list-item>
           <list-item>
             Email:
-            <anchor variant="bold" href="mailto:team@vuejs.london" target="_blank"
+            <anchor variant="bold" href="mailto:team@vuejs.london" rel="noopener" target="_blank"
               >team@vue.js.london</anchor
             >
           </list-item>
@@ -31,11 +35,10 @@
 
     <page-section class="c-footer__bottom">
       Proudly produced by
-      <anchor variant="bold" href="https://twitter.com/blakenewman" target="_blank"
+      <anchor variant="bold" href="https://twitter.com/blakenewman" rel="noopener" target="_blank"
         >Blake Newman</anchor
-      >
-      - supported by
-      <anchor variant="bold" href="https://twitter.com/blakenewman" target="_blank"
+      >- supported by
+      <anchor variant="bold" href="https://twitter.com/blakenewman" rel="noopener" target="_blank"
         >Rui Posse</anchor
       >
       <div class="c-footer__copyright u-font--regular">

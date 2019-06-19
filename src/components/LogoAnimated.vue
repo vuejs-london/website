@@ -5,6 +5,7 @@
     viewBox="0 0 2058.71 826.05"
     class="svg c-logo-animated--hidden"
   >
+    <animation-frame @frame="start" v-if="!started" />
     <g id="firstbird" class="bird">
       <path
         class="wing_b"
@@ -502,19 +503,33 @@
 
 <script>
 import { Elastic, Sine, TimelineMax, TweenMax } from 'gsap/umd/TweenMax'
+import AnimationFrame from '~/components/abstract/AnimationFrame'
 
 export default {
-  mounted() {
-    this.wordsIn()
-
-    const master = new TimelineMax()
-    master.add(this.flyIn())
-    master.add(this.comeTogether(), 'ct')
-
-    this.$el.classList.remove('c-logo-animated--hidden')
-    this.birdsTimeline()
+  components: {
+    AnimationFrame,
   },
+
+  data() {
+    return {
+      started: false,
+    }
+  },
+
   methods: {
+    start() {
+      console.log('here')
+      this.started = true
+      this.wordsIn()
+
+      const master = new TimelineMax()
+      master.add(this.flyIn())
+      master.add(this.comeTogether(), 'ct')
+
+      this.$el.classList.remove('c-logo-animated--hidden')
+      this.birdsTimeline()
+    },
+
     wordsIn() {
       TweenMax.set('#words', {
         visibility: 'visible',
