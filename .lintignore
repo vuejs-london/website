@@ -5,3 +5,4 @@
 /.nuxt/*
 /src/plugins/*
 /src/static/*
+drift.*

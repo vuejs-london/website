@@ -61,8 +61,8 @@ export default {
 
 <style lang="postcss">
 .c-navbar {
-  position: fixed; /* stylelint(plugin/no-unsupported-browser-features) */
-  position: sticky;
+  position: fixed;
+  position: sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
   z-index: var(--z-index-navbar);
   top: 0;
   display: block;
