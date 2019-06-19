@@ -26,6 +26,7 @@
       <form-button
         tag="a"
         href="https://docs.google.com/forms/d/e/1FAIpQLSdcRF5c8ZbsKAv1jD0CSs4h9IyMr8ySMxjPgGz8tnku8kY6vg/viewform"
+        rel="noopener"
         target="_blank"
         >Apply now!</form-button
       >

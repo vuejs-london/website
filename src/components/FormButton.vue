@@ -35,20 +35,20 @@ export default {
   padding: var(--grid-two) var(--grid-four);
   border: 0;
   margin: var(--grid-three) 0;
-  background-color: var(--color-green);
+  background-color: var(--color-green--dark);
   border-radius: var(--grid-half);
   color: var(--color-white);
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: opacity 0.3s ease;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 
   &:hover,
   &:active {
-    background-color: var(--color-green--dark);
+    opacity: 0.9;
   }
 
   &a {
