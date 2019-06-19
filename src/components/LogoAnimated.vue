@@ -1,11 +1,11 @@
 <template>
   <svg
     ref="svg"
-    v-if="defer(200)"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 2058.71 826.05"
     class="svg c-logo-animated--hidden"
   >
+    <animation-frame @frame="start" v-if="!started" />
     <g id="firstbird" class="bird">
       <path
         class="wing_b"
@@ -503,12 +503,23 @@
 
 <script>
 import { Elastic, Sine, TimelineMax, TweenMax } from 'gsap/umd/TweenMax'
-import Defer from '@/mixins/Defer'
+import AnimationFrame from '~/components/abstract/AnimationFrame'
 
 export default {
-  mixins: [Defer()],
-  mounted() {
-    if (this.defer(200)) {
+  components: {
+    AnimationFrame,
+  },
+
+  data() {
+    return {
+      started: false,
+    }
+  },
+
+  methods: {
+    start() {
+      console.log('here')
+      this.started = true
       this.wordsIn()
 
       const master = new TimelineMax()
@@ -517,9 +528,8 @@ export default {
 
       this.$el.classList.remove('c-logo-animated--hidden')
       this.birdsTimeline()
-    }
-  },
-  methods: {
+    },
+
     wordsIn() {
       TweenMax.set('#words', {
         visibility: 'visible',
