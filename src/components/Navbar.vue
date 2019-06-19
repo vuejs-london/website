@@ -61,13 +61,14 @@ export default {
 
 <style lang="postcss">
 .c-navbar {
+  position: fixed; /* stylelint(plugin/no-unsupported-browser-features) */
   position: sticky;
   z-index: var(--z-index-navbar);
   top: 0;
   display: block;
   width: 100%;
   align-items: center;
-  padding: var(--grid-two) 0;
+  padding: calc(var(--grid-two) -5px) 0;
   border-bottom: 1px solid var(--color-grey--light);
   background: var(--color-white);
   transition: transform 0.3s ease;
@@ -76,6 +77,7 @@ export default {
     display: flex;
     max-width: var(--page-width);
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     padding: 0 var(--grid-two);
     margin: 0 auto;
@@ -84,6 +86,7 @@ export default {
   &__logo {
     display: flex;
     align-items: center;
+    padding: 5px 0;
     text-transform: uppercase;
   }
 
