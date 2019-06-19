@@ -71,7 +71,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin-ext&display=optional',
+          'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin-ext',
       },
     ],
   },
