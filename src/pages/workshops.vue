@@ -1,6 +1,8 @@
 <template>
   <main>
     <page-section>
+      <form-button to="/tickets" tag="nuxt-link" class="p__tickets">Conference tickets</form-button>
+
       <heading variant="block">Workshops</heading>
       <heading level="4" tag="p" class="p__location">
         CCT Venues, 193 Marsh Wall, Isle of Dogs, London E14 9RS
@@ -193,8 +195,6 @@
       </paragraph>
 
       <div ref="tickets" class="tickets"></div>
-
-      <form-button to="/tickets" tag="nuxt-link" class="p__tickets">Conference tickets</form-button>
     </page-section>
   </main>
 </template>
@@ -253,8 +253,10 @@ export default {
 }
 
 .p__tickets {
-  position: fixed;
-  right: var(--grid-six);
-  bottom: var(--grid-four);
+  position: sticky;
+  z-index: var(--z-index-button-sticky);
+  top: calc(var(--grid-ten) - 3px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 </style>

@@ -1,6 +1,9 @@
 <template>
   <main>
     <page-section>
+      <form-button to="/workshops" tag="nuxt-link" class="p__workshops">
+        Workshop tickets
+      </form-button>
       <heading variant="block">Conference Tickets</heading>
       <paragraph>
         Join us at the iconic O2 Arena, for our conference on 4th October 2019 which includes
@@ -25,10 +28,6 @@
       </paragraph>
 
       <div ref="tickets" class="tickets"></div>
-
-      <form-button to="/workshops" tag="nuxt-link" class="p__workshops"
-        >Workshop tickets</form-button
-      >
     </page-section>
   </main>
 </template>
@@ -70,8 +69,10 @@ export default {
 }
 
 .p__workshops {
-  position: fixed;
-  right: var(--grid-six);
-  bottom: var(--grid-four);
+  position: sticky;
+  z-index: var(--z-index-button-sticky);
+  top: calc(var(--grid-ten) - 3px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 </style>

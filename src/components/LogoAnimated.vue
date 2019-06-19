@@ -518,7 +518,6 @@ export default {
 
   methods: {
     start() {
-      console.log('here')
       this.started = true
       this.wordsIn()
 

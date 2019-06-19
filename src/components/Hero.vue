@@ -24,9 +24,9 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .c-hero {
-  &__logo {
+  & >>> &__logo {
     height: calc(var(--grid-one) * 55);
     padding-top: var(--grid-ten);
     padding-left: var(--grid-three);
