@@ -1,6 +1,7 @@
 <template>
   <svg
     ref="svg"
+    v-if="defer(200)"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 2058.71 826.05"
     class="svg c-logo-animated--hidden"
@@ -502,17 +503,21 @@
 
 <script>
 import { Elastic, Sine, TimelineMax, TweenMax } from 'gsap/umd/TweenMax'
+import Defer from '@/mixins/Defer'
 
 export default {
+  mixins: [Defer()],
   mounted() {
-    this.wordsIn()
+    if (this.defer(200)) {
+      this.wordsIn()
 
-    const master = new TimelineMax()
-    master.add(this.flyIn())
-    master.add(this.comeTogether(), 'ct')
+      const master = new TimelineMax()
+      master.add(this.flyIn())
+      master.add(this.comeTogether(), 'ct')
 
-    this.$el.classList.remove('c-logo-animated--hidden')
-    this.birdsTimeline()
+      this.$el.classList.remove('c-logo-animated--hidden')
+      this.birdsTimeline()
+    }
   },
   methods: {
     wordsIn() {

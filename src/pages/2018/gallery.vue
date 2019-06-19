@@ -22,12 +22,9 @@
 
 <script>
 import Heading from '~/components/Heading.vue'
-import Lightbox from 'vue-easy-lightbox'
 import PageImage from '~/components/PageImage.vue'
 import PageSection from '~/components/PageSection.vue'
 import Vue from 'vue'
-
-Vue.use(Lightbox)
 
 const images = new Array(473).fill('').map((_, index) => `${index + 1}`.padStart(4, '0'))
 
@@ -53,6 +50,13 @@ export default {
       imagesFull,
       visible: false,
       index: 0,
+    }
+  },
+
+  mounted() {
+    if (process.client) {
+      const Lightbox = require('vue-easy-lightbox')
+      Vue.use(Lightbox)
     }
   },
 
