@@ -1,4 +1,6 @@
-module.exports = {
+import open from 'open'
+
+export default {
   /*
    ** Set source directory
    */
@@ -69,15 +71,12 @@ module.exports = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin-ext',
+          'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin-ext&display=optional',
       },
     ],
   },
 
-  plugins: [
-    { src: '~plugins/drift.js', ssr: false },
-    { src: '~plugins/vue-easy-lightbox.js', ssr: false },
-  ],
+  plugins: ['~plugins/drift.client.js'],
 
   modules: [
     '@nuxtjs/pwa',
@@ -101,7 +100,41 @@ module.exports = {
 
   css: ['~/style'],
 
+  hooks: {
+    listen(server, { host, port }) {
+      if (process.env.NODE_ENV !== 'production') {
+        open(`http://${host}:${port}`)
+      }
+    },
+  },
+
   build: {
+    optimization: {
+      runtimeChunk: true,
+      splitChunks: {
+        chunks: 'async',
+        minSize: 30000,
+        maxSize: 0,
+        cacheGroups: {
+          vendors: {
+            test: /[\\/]node_modules[\\/]/,
+            priority: -10,
+            enforce: true,
+          },
+          default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true,
+          },
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true,
+          },
+        },
+      },
+    },
     postcss: {
       order: [
         'postcss-import',
