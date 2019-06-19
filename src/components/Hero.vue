@@ -13,13 +13,12 @@
 
 <script>
 import Heading from '~/components/Heading'
-import LogoAnimated from '~/components/LogoAnimated'
 import PageSection from '~/components/PageSection'
 
 export default {
   components: {
     Heading,
-    LogoAnimated,
+    LogoAnimated: () => import('~/components/LogoAnimated'),
     PageSection,
   },
 }

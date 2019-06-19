@@ -303,7 +303,7 @@
       <p>
         For more information on the privacy practices of Google, please visit the Google Privacy
         &amp; Terms web page:&nbsp;
-        <anchor href="https://policies.google.com/privacy?hl=en" target="_blank"
+        <anchor href="https://policies.google.com/privacy?hl=en" rel="noopener" target="_blank"
           >https://policies.google.com/privacy?hl=en</anchor
         >
       </p>
@@ -324,7 +324,7 @@
       <heading level="3">Stripe</heading>
       <p>
         Their Privacy Policy can be viewed at&nbsp;
-        <anchor href="https://stripe.com/us/privacy" target="_blank"
+        <anchor href="https://stripe.com/us/privacy" rel="noopener" target="_blank"
           >https://stripe.com/us/privacy</anchor
         >
       </p>

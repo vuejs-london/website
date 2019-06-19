@@ -4,18 +4,21 @@
       v-if="github"
       :href="github"
       class="c-speaker-social__icon c-speaker-social__icon--github"
+      rel="noopener"
       target="_blank"
     />
     <anchor
       v-if="gitlab"
       :href="gitlab"
       class="c-speaker-social__icon c-speaker-social__icon--gitlab"
+      rel="noopener"
       target="_blank"
     />
     <anchor
       v-if="twitter"
       :href="twitter"
       class="c-speaker-social__icon c-speaker-social__icon--twitter"
+      rel="noopener"
       target="_blank"
     />
   </div>

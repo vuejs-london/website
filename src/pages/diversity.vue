@@ -29,6 +29,7 @@
       <form-button
         tag="a"
         href="https://docs.google.com/forms/d/e/1FAIpQLSc22Tfi_I9A_6IPE4OvVcTdPjMv2wltvG1KGEzAyRXwKHzC6A/viewform"
+        rel="noopener"
         target="_blank"
         >Apply now!</form-button
       >
@@ -39,7 +40,10 @@
         and future events.
       </paragraph>
       <paragraph>
-        Please get in contact with us through email, <i><strong>sponsors@vuejs.london</strong></i>
+        Please get in contact with us through email,
+        <i>
+          <strong>sponsors@vuejs.london</strong>
+        </i>
       </paragraph>
       <form-button tag="a" href="mailto:sponsors@vuejs.london">Become a sponsor</form-button>
     </page-section>
