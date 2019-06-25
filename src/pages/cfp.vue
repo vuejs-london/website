@@ -14,7 +14,7 @@
         talks, we will work with all accepted speakers to ensure their content is focused for Vue 3.
       </paragraph>
       <list bullet>
-        <list-item>Deadline is 26th July 2019</list-item>
+        <list-item>Deadline is 2nd July 2019</list-item>
         <list-item>Conference day is 4th October 2019</list-item>
         <list-item>Workshop day is 5th October 2019</list-item>
         <list-item>You are welcome to submit as many proposals as you like</list-item>
