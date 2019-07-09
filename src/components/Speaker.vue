@@ -21,7 +21,7 @@
       </template>
     </modal>
 
-    <div @click="showDetails" @keyup.enter="showDetails" class="c-speaker__item">
+    <article @click="showDetails" @keyup.enter="showDetails" tabindex="0" class="c-speaker__item">
       <div class="c-speaker__aside">
         <img :src="image" :alt="name" class="c-speaker__image" />
         <div class="c-speaker__heading">
@@ -41,7 +41,7 @@
       >
         Buy Tickets
       </form-button>
-    </div>
+    </article>
   </div>
 </template>
 
