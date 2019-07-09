@@ -2,6 +2,91 @@
   <main>
     <hero />
     <page-section>
+      <heading level="2" variant="block">Announced Talks</heading>
+      <speaker-list columns="2">
+        <speaker image="/img/logo-120.png" topic="Scalable data visualisation with D3 and Vue">
+          <paragraph>
+            D3 is the best choice when you want to create complex and interactive data visualisation
+            for the web. D3 works directly with the DOM. In contrast, Vue works with a virtual DOM.
+          </paragraph>
+          <paragraph>
+            How can you make the two have a great friendship and not fight over DOM manipulation?
+          </paragraph>
+          <paragraph>
+            I will cover this in my talk and also tips on how to build scalable data visualisation
+            components, when is a good idea to use D3 and methods on how to make it less
+            intimidating when combined with Vue. I will show examples from simple D3 visualisations
+            to more complex ones
+          </paragraph>
+        </speaker>
+        <speaker
+          image="/img/logo-120.png"
+          topic="Identifying and solving performance issues in Vue applications"
+        >
+          <paragraph>
+            In mobile-first era performance has never been more important yet a lot of websites
+            struggle with many issues in this area. During the talk, after short theoretical
+            introduction I’ll dig into a live coding session on a real-world Vue application that
+            suffers from performance issues.
+          </paragraph>
+          <paragraph>
+            I will show how to solve them on stage while introducing proper usage of lazy loading
+            for routes, libs and components along with proper caching strategies.
+          </paragraph>
+          <paragraph>
+            I will also show tools that could identify performance issues and suggest proper way of
+            solving them like Webpack Bundle Analyzer or Bundlephobia.
+          </paragraph>
+        </speaker>
+        <speaker image="/img/logo-120.png" topic="Scripting in style, what's your Vue?">
+          <paragraph>
+            Built-in CSS Modules and Scoped CSS support eases the process of styling your Vue. But a
+            separate &lt;style&gt; tag is still needed. What about styling directly and dynamically
+            in JavaScript - aka CSS-in-JS and save the pain?
+          </paragraph>
+          <paragraph>Should we, or should we not consider this as a good approach?</paragraph>
+        </speaker>
+        <speaker image="/img/logo-120.png" topic="5 animations any Vue app can use">
+          <paragraph>
+            We've heard that animating our web interfaces can improve user experience and even boost
+            conversions, but what exactly should we be animating, and how?
+          </paragraph>
+          <paragraph>
+            This talk walks through using Vue.js to build several practical animations any web app
+            can use to help increase user engagement and enjoyment.
+          </paragraph>
+        </speaker>
+        <speaker image="/img/logo-120.png" topic="The new Function-based component API">
+          <paragraph>
+            Vue 3 and a Vue 2 plugin will offer new ways of encapsulating reusable chunks of code
+            that offer a lot of advantages over patterns/features like mixins, Wrapper Components or
+            Renderless components: composition functions using dynamic lifecycle hooks and the new
+            Reactivity API.
+          </paragraph>
+          <paragraph>
+            In this talk, we will talk about the history of these "other" features, their use cases
+            and their use cases and weaknesses, and finally, show how you can solve these use cases
+            that the Functional Component Composition API provides, and how that's better in a lot
+            of ways: more elegant, more composable, less scattered.
+          </paragraph>
+        </speaker>
+        <speaker
+          image="/img/logo-120.png"
+          topic="Live coding: The new Function-based component API"
+        >
+          <paragraph>
+            Extending the talk `The new Function-base component API`, we will do a full live coding
+            session to explain the details that the new API offers, coding and building real life
+            examples to expand the horizons for your applications.
+          </paragraph>
+          <paragraph>
+            With this live coding session we aim to discover the benefits and details of the new
+            Function-based component API, and have a little laugh along the way.
+          </paragraph>
+        </speaker>
+      </speaker-list>
+
+      <heading level="2" variant="block">Links</heading>
       <form-button to="/tickets" tag="nuxt-link" class="p__tickets">Conference tickets</form-button>
       <form-button to="/workshops" tag="nuxt-link">View workshops</form-button>
       <form-button to="/cfp" tag="nuxt-link">Submit CFP</form-button>
@@ -12,13 +97,22 @@
 
 <script>
 import FormButton from '~/components/FormButton'
+import Heading from '~/components/Heading'
 import Hero from '~/components/Hero'
+import PageSection from '~/components/PageSection'
+import Paragraph from '~/components/Paragraph'
+import Speaker from '~/components/Speaker'
+import SpeakerList from '~/components/SpeakerList'
 
 export default {
   components: {
     FormButton,
+    Heading,
     Hero,
-    PageSection: () => import('~/components/PageSection'),
+    PageSection,
+    Paragraph,
+    Speaker,
+    SpeakerList,
   },
 
   head: {
@@ -26,9 +120,3 @@ export default {
   },
 }
 </script>
-
-<style lang="postcss" scoped>
-.p__tickets {
-  margin-top: var(--grid-eight);
-}
-</style>

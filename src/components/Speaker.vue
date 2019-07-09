@@ -4,7 +4,7 @@
       <template #body>
         <div class="c-speaker__large">
           <speaker-social v-bind="social" class="c-speaker__social" />
-          <div class="c-speaker__time">{{ time }}</div>
+          <div v-if="time" class="c-speaker__time">{{ time }}</div>
           <div class="c-speaker__aside">
             <img v-if="name && title" :src="image" :alt="name" class="c-speaker__image" />
             <div class="c-speaker__heading">
@@ -29,7 +29,7 @@
           <heading level="6" tag="div">{{ title || topic }}</heading>
         </div>
         <speaker-social v-bind="social" class="c-speaker__social" />
-        <div class="c-speaker__time">{{ time }}</div>
+        <div v-if="time" class="c-speaker__time">{{ time }}</div>
       </div>
 
       <form-button
