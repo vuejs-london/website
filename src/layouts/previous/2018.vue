@@ -67,14 +67,9 @@ export default {
         text: 'Store',
       },
       { to: '/2019', text: '2019' },
+      { to: '/code-of-conduct', text: 'Code of Conduct' },
       { to: '/terms-and-conditions', text: 'Terms and Conditions' },
       { to: '/privacy-policy', text: 'Privacy Policy' },
-      {
-        href: 'http://confcodeofconduct.com/',
-        rel: 'noopener',
-        target: '_blank',
-        text: 'Code of Conduct',
-      },
     ]
   },
 }

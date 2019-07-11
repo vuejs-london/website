@@ -84,14 +84,9 @@ export default {
       { to: '/tickets', text: 'Tickets' },
       { to: '/cfp', text: 'CFP' },
       { to: '/diversity', text: 'Diversity' },
+      { to: '/code-of-conduct', text: 'Code of Conduct' },
       { to: '/terms-and-conditions', text: 'Terms and Conditions' },
       { to: '/privacy-policy', text: 'Privacy Policy' },
-      {
-        href: 'http://confcodeofconduct.com/',
-        rel: 'noopener',
-        target: '_blank',
-        text: 'Code of Conduct',
-      },
     ]
   },
 }
