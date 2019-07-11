@@ -180,10 +180,46 @@
           time="09:00 - 17:00"
         >
           <paragraph>
-            Come to this workshop to learn how to test your Vue Application thoroughly.
+            Working with Vue is a lot of fun and you can build amazing applications with it. When
+            building a full product though, we want to make sure it's all highest quality. Besides
+            good development patterns, testing is an incredibly important aspect of the delivery
+            process.
           </paragraph>
           <paragraph>
-            Workshop description will be updated shortly.
+            With my years of experience in building a big scale SaaS product in the CI space, and
+            working with Vue in production since 0.11 days, I am happy to introduce you to practical
+            in-depth application testing with Vue.
+          </paragraph>
+          <list bullet>
+            <list-item>
+              Learn the basics of Jest and what you can do with it
+            </list-item>
+            <list-item>
+              Get started with the Vue Test Utils
+            </list-item>
+            <list-item>
+              Learn the ins and outs of Snapshot testing
+            </list-item>
+            <list-item>
+              Inject Dependencies into your Vue Components
+            </list-item>
+            <list-item>
+              Mocks and Stubs within Vue Components
+            </list-item>
+            <list-item>
+              Destructure and Test a complex Vuex Store
+            </list-item>
+            <list-item>
+              Learn to use factories for more efficiency
+            </list-item>
+            <list-item>
+              Behavior driven snapshot testing of use flows
+            </list-item>
+          </list>
+          <paragraph>
+            All you need to bring along is basic knowledge about Vue. No need to be an expert or
+            even an a master of Vuex. Learning to write tests will make you a better developer along
+            the way, as you'll end up writing simpler and more precise code.
           </paragraph>
         </speaker>
       </speaker-list>
