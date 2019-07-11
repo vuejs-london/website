@@ -30,8 +30,8 @@ export default {
   &--bullet {
     margin-top: var(--grid-two);
     margin-bottom: var(--grid-two);
-    margin-left: var(--grid-two);
-    list-style: inside;
+    margin-left: var(--grid-four);
+    list-style: outside;
   }
 }
 </style>

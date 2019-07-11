@@ -39,26 +39,32 @@ export default {
   line-height: 1.5;
 
   &--1 {
+    margin-top: var(--grid-five);
     font-size: var(--grid-six);
   }
 
   &--2 {
+    margin-top: var(--grid-four);
     font-size: var(--grid-five);
   }
 
   &--3 {
+    margin-top: var(--grid-three);
     font-size: var(--grid-four);
   }
 
   &--4 {
+    margin-top: var(--grid-two);
     font-size: calc(var(--grid-three) + var(--grid-half));
   }
 
   &--5 {
+    margin-top: var(--grid-two);
     font-size: var(--grid-three);
   }
 
   &--6 {
+    margin-top: var(--grid-one);
     font-size: calc(var(--grid-two) + var(--grid-half));
     font-weight: 50;
   }
