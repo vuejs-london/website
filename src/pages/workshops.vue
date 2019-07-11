@@ -223,7 +223,11 @@
           </paragraph>
         </speaker>
 
-        <speaker image="/img/speakers/vuevixens.png" topic="Vue Vixens Skulk" time="13:30 - 17:30">
+        <speaker
+          image="/img/speakers/vuevixens.png"
+          topic="A Vue Vixens Skulk"
+          time="13:30 - 17:30"
+        >
           <paragraph>
             Join Boston Vue.js Co-Organizer Kristin Ruben for a fun web and mobile Vue.js workshop!
           </paragraph>
