@@ -5,8 +5,8 @@
     </page-section>
     <div class="c-hero__banner">
       <heading class="u-visually-hidden">Vue.js London</heading>
-      <heading level="2" class="c-hero__location">Cineworld at the O2</heading>
-      <heading level="3" class="c-hero__date">4-5 October 2019</heading>
+      <heading level="2" class="c-hero__location" variant="style-only">Cineworld at the O2</heading>
+      <heading level="3" class="c-hero__date" variant="style-only">4-5 October 2019</heading>
     </div>
   </div>
 </template>
