@@ -222,6 +222,17 @@
             the way, as you'll end up writing simpler and more precise code.
           </paragraph>
         </speaker>
+
+        <speaker image="/img/speakers/vuevixens.png" topic="Vue Vixens Skulk" time="13:30 - 17:30">
+          <paragraph>
+            Join Boston Vue.js Co-Organizer Kristin Ruben for a fun web and mobile Vue.js workshop!
+          </paragraph>
+          <paragraph>
+            This event is free and open to anyone who identify as a woman and wants to learn about
+            Vue.js. No previous knowledge of Vue.js is required to attend this event and we invite
+            women of all ages, skill levels and backgrounds to join us.
+          </paragraph>
+        </speaker>
       </speaker-list>
 
       <paragraph class="p__why">
