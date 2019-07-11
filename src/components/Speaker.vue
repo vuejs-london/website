@@ -8,8 +8,8 @@
           <div class="c-speaker__aside">
             <img v-if="name && title" :src="image" :alt="name" class="c-speaker__image" />
             <div class="c-speaker__heading">
-              <heading level="4" tag="div">{{ name }}</heading>
-              <heading level="5" tag="div">{{ title }}</heading>
+              <heading level="4" tag="div" variant="style-only">{{ name }}</heading>
+              <heading level="5" tag="div" variant="style-only">{{ title }}</heading>
             </div>
           </div>
 
@@ -17,6 +17,28 @@
             <heading level="4" tag="div">{{ topic }}</heading>
             <slot></slot>
           </div>
+
+          <form-button
+            v-if="tickets"
+            to="/tickets"
+            tag="nuxt-link"
+            size="small"
+            class="c-speaker__button"
+          >
+            Buy Tickets
+          </form-button>
+
+          <form-button
+            v-if="signup"
+            :href="signup"
+            rel="noopener"
+            target="_blank"
+            tag="a"
+            size="small"
+            class="c-speaker__button"
+          >
+            Sign up
+          </form-button>
         </div>
       </template>
     </modal>
@@ -25,8 +47,8 @@
       <div class="c-speaker__aside">
         <img :src="image" :alt="name" class="c-speaker__image" />
         <div class="c-speaker__heading">
-          <heading level="5" tag="div">{{ name }}</heading>
-          <heading level="6" tag="div">{{ title || topic }}</heading>
+          <heading level="5" tag="div" variant="style-only">{{ name }}</heading>
+          <heading level="6" tag="div" variant="style-only">{{ title || topic }}</heading>
         </div>
         <speaker-social v-bind="social" class="c-speaker__social" />
         <div v-if="time" class="c-speaker__time">{{ time }}</div>
@@ -35,11 +57,23 @@
       <form-button
         v-if="tickets"
         to="/tickets"
-        tap="nuxt-link"
+        tag="nuxt-link"
         size="small"
         class="c-speaker__button"
       >
         Buy Tickets
+      </form-button>
+
+      <form-button
+        v-if="signup"
+        :href="signup"
+        rel="noopener"
+        target="_blank"
+        tag="a"
+        size="small"
+        class="c-speaker__button"
+      >
+        Sign up
       </form-button>
     </article>
   </div>
@@ -85,6 +119,10 @@ export default {
       default: () => ({}),
     },
     tickets: {
+      type: String,
+      default: null,
+    },
+    signup: {
       type: String,
       default: null,
     },
@@ -216,12 +254,17 @@ export default {
   }
 
   &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
     flex: 0 1 min-content;
     align-self: flex-end;
     padding: var(--grid-one) var(--grid-two);
-    margin-top: var(--grid-one);
+    margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
     justify-self: flex-end;
   }
 }

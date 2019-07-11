@@ -227,6 +227,7 @@
           image="/img/speakers/vuevixens.png"
           topic="A Vue Vixens Skulk"
           time="13:30 - 17:30"
+          signup="https://vuevixens.org/events/vue-london-2019"
         >
           <paragraph>
             Join Boston Vue.js Co-Organizer Kristin Ruben for a fun web and mobile Vue.js workshop!

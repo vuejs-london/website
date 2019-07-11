@@ -12,7 +12,7 @@ export default {
       default: undefined,
     },
     variant: {
-      type: String, // block
+      type: String, // block | style-only
       default: null,
     },
   },
@@ -67,6 +67,10 @@ export default {
     margin-top: var(--grid-one);
     font-size: calc(var(--grid-two) + var(--grid-half));
     font-weight: 50;
+  }
+
+  &--style-only {
+    margin-top: 0;
   }
 
   &--block {
