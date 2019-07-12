@@ -29,14 +29,7 @@ export default {
     this.navbarLinks = [
       { to: '/tickets', text: 'Tickets' },
       { to: '/workshops', text: 'Workshops' },
-      { to: '/cfp', text: 'CFP' },
       { to: '/diversity', text: 'Diversity' },
-      {
-        href: 'https://shop.spreadshirt.co.uk/vue-london/',
-        rel: 'noopener',
-        target: '_blank',
-        text: 'Store',
-      },
       {
         href: 'https://www.meetup.com/vuejs-london/',
         rel: 'noopener',
@@ -82,7 +75,6 @@ export default {
       },
       { to: '/2018', text: '2018' },
       { to: '/tickets', text: 'Tickets' },
-      { to: '/cfp', text: 'CFP' },
       { to: '/diversity', text: 'Diversity' },
       { to: '/terms-and-conditions', text: 'Terms and Conditions' },
       { to: '/privacy-policy', text: 'Privacy Policy' },
