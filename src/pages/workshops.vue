@@ -222,6 +222,83 @@
             the way, as you'll end up writing simpler and more precise code.
           </paragraph>
         </speaker>
+        <speaker image="/img/logo-120.png" topic="E2E testing with Cypress" time="09:00 - 17:00">
+          <paragraph>
+            We all want to consistently ship quality software. One of the best ways to do that is by
+            end-to-end (E2E) testing our apps to simulate the real actions of our users. However,
+            E2E testing in real browsers has notoriously been time-consuming, expensive, slow, and
+            often flaky. Unfortunately, these issues lead to developers doing very little to no E2E
+            testing and taking solace in a plethora of unit-tests that cannot fully test the
+            intended experience of users.
+          </paragraph>
+          <paragraph>
+            In this hands-on session, we’ll dive deep into using Cypress, a developer-friendly
+            open-source tool that enables us to easily compose flake-free, reliable, deterministic
+            E2E tests for our web applications.
+          </paragraph>
+          <paragraph>
+            Session Outline
+          </paragraph>
+          <list bullet>
+            <list-item>
+              Introduction &amp; Overview
+            </list-item>
+            <list-item>
+              Cypress basics
+            </list-item>
+            <list-item>
+              Adding tests and configurations
+            </list-item>
+            <list-item>
+              Cypress Selector Playground
+            </list-item>
+            <list-item>
+              Resetting/cleanup between tests
+            </list-item>
+            <list-item>
+              Spying and stubbing XHR requests
+            </list-item>
+            <list-item>
+              Accessing application code and data
+            </list-item>
+            <list-item>
+              Setting up E2E tests on CI
+            </list-item>
+            <list-item>
+              Setting up Cypress Dashboard
+            </list-item>
+            <list-item>
+              Test Reporters
+            </list-item>
+            <list-item>
+              Retry-ability
+            </list-item>
+            <list-item>
+              Custom commands
+            </list-item>
+            <list-item>
+              Page Objects vs App Actions
+            </list-item>
+            <list-item>
+              Fixtures
+            </list-item>
+            <list-item>
+              Debugging
+            </list-item>
+            <list-item>
+              Preprocessors
+            </list-item>
+            <list-item>
+              Component Testing
+            </list-item>
+            <list-item>
+              Code coverage
+            </list-item>
+          </list>
+          <paragraph>
+            The session will be accompanied by exercises, demo app, and slides.
+          </paragraph>
+        </speaker>
 
         <speaker
           image="/img/speakers/vuevixens.png"
