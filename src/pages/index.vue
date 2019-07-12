@@ -85,26 +85,52 @@
           </paragraph>
         </speaker>
       </speaker-list>
+
+      <heading variant="block">Our Sponsors</heading>
+
+      <sponsor-group columns="1" size="medium">
+        <template #title>
+          Silver
+        </template>
+        <sponsor
+          href="https://progress.com"
+          rel="noopener"
+          image="/img/sponsors/progress.png"
+          title="Progress"
+        />
+      </sponsor-group>
+
+      <form-button
+        tag="a"
+        href="https://drive.google.com/file/d/1YYHlMjzAkrqSJwdGN_vSg9L4Y1hi17D1/view"
+        >Sponsor Brochure</form-button
+      >
     </page-section>
   </main>
 </template>
 
 <script>
+import FormButton from '~/components/FormButton'
 import Heading from '~/components/Heading'
 import Hero from '~/components/Hero'
 import PageSection from '~/components/PageSection'
 import Paragraph from '~/components/Paragraph'
 import Speaker from '~/components/Speaker'
 import SpeakerList from '~/components/SpeakerList'
+import Sponsor from '~/components/Sponsor'
+import SponsorGroup from '~/components/SponsorGroup'
 
 export default {
   components: {
+    FormButton,
     Heading,
     Hero,
     PageSection,
     Paragraph,
     Speaker,
     SpeakerList,
+    Sponsor,
+    SponsorGroup,
   },
 
   head: {
