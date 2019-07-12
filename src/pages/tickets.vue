@@ -5,13 +5,19 @@
         Workshop tickets
       </form-button>
       <heading variant="block">Conference Tickets</heading>
-      <paragraph>
+      <location
+        name="Cineworld at The O2"
+        address="The O2, Peninsula Square, London SE10 0DX"
+        image="/img/venue/cineworld-screen.jpg"
+        url="https://www.google.com/maps/place/Cineworld+Cinema+London+O2+Greenwich/@51.5031809,0.0044136,15z/data=!4m2!3m1!1s0x0:0xb3ca4f4fde6ca073?sa=X&ved=2ahUKEwiOnv2nga_jAhWbTRUIHZyMCloQ_BIwC3oECA8QCA"
+        date="04 October 2019"
+      />
+      <paragraph class="p__desc">
         Join us at the iconic O2 Arena, for our conference on 4th October 2019 which includes
         breakfast and lunch with a day packed full of content; 10 Talks, 8 Lightning Talks, 8 Advice
-        Lounge Experts, an After Party and more... Choose from 6 workshops, TBA, on the 5th (Sold
-        Separately) This years theme is growth, scale and awareness; with Vue 3 at the centre of
-        focus. Don't miss out of this critical conference to ensure you are prepped and ready for
-        everything related to Vue 3 and more...
+        Lounge Experts, an After Party and more... This years theme is growth, scale and awareness;
+        with Vue 3 at the centre of focus. Don't miss out of this critical conference to ensure you
+        are prepped and ready for everything related to Vue 3 and more...
       </paragraph>
 
       <heading level="2" variant="block">Student &amp; low earning tickets</heading>
@@ -35,6 +41,7 @@
 <script>
 import FormButton from '~/components/FormButton.vue'
 import Heading from '~/components/Heading.vue'
+import Location from '~/components/Location.vue'
 import PageSection from '~/components/PageSection.vue'
 import Paragraph from '~/components/Paragraph.vue'
 
@@ -45,6 +52,7 @@ export default {
 
   components: {
     FormButton,
+    Location,
     Heading,
     PageSection,
     Paragraph,
@@ -74,5 +82,9 @@ export default {
   top: calc(var(--grid-ten) - 3px);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.p__desc {
+  margin-top: var(--grid-four);
 }
 </style>

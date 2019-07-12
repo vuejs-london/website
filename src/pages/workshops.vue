@@ -4,9 +4,13 @@
       <form-button to="/tickets" tag="nuxt-link" class="p__tickets">Conference tickets</form-button>
 
       <heading variant="block">Workshops</heading>
-      <heading level="4" tag="p" class="p__location">
-        CCT Venues, 193 Marsh Wall, Isle of Dogs, London E14 9RS
-      </heading>
+      <location
+        name="CCT Venues"
+        address="193 Marsh Wall, Isle of Dogs, London E14 9RS"
+        image="/img/venue/cct-venues.jpg"
+        url="https://www.google.com/maps/place/CCT+Venues-Docklands/@51.5006797,-0.0170056,17z/data=!3m1!4b1!4m5!3m4!1s0x487602bba15e6c91:0x674d16e7ec0ae32c!8m2!3d51.5006797!4d-0.0148169"
+        date="05 October 2019"
+      />
 
       <speaker-list columns="2">
         <speaker image="/img/logo-120.png" topic="Motion Design with Vue" time="09:00 - 17:00">
@@ -333,6 +337,7 @@ import FormButton from '~/components/FormButton.vue'
 import Heading from '~/components/Heading'
 import List from '~/components/List'
 import ListItem from '~/components/ListItem'
+import Location from '~/components/Location'
 import PageSection from '~/components/PageSection'
 import Paragraph from '~/components/Paragraph'
 import Speaker from '~/components/Speaker'
@@ -346,6 +351,7 @@ export default {
   components: {
     FormButton,
     Heading,
+    Location,
     List,
     ListItem,
     PageSection,
