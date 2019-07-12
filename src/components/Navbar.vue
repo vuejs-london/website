@@ -3,7 +3,7 @@
     <div class="c-navbar__container">
       <anchor :to="titleLink" class="c-navbar__logo">
         <slot name="title">
-          <heading level="6" tag="span">Vue.js London</heading>
+          <heading level="6" tag="span" variant="style-only">Vue.js London</heading>
         </slot>
       </anchor>
       <burger @click.native="toggle" :active="isOpen" class="c-navbar__burger"></burger>
