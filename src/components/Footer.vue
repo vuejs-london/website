@@ -35,12 +35,13 @@
 
     <page-section class="c-footer__bottom">
       Proudly produced by
-      <anchor variant="bold" href="https://twitter.com/blakenewman" rel="noopener" target="_blank"
-        >Blake Newman</anchor
-      >- supported by
-      <anchor variant="bold" href="https://twitter.com/ruiposse" rel="noopener" target="_blank"
-        >Rui Posse</anchor
-      >
+      <anchor variant="bold" href="https://twitter.com/blakenewman" rel="noopener" target="_blank">
+        Blake Newman
+      </anchor>
+      - supported by
+      <anchor variant="bold" href="https://twitter.com/ruiposse" rel="noopener" target="_blank">
+        Rui Posse
+      </anchor>
       <div class="c-footer__copyright u-font--regular">
         Copyright 2019 Vue.js London. All rights reserved.
       </div>
