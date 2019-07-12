@@ -22,3 +22,7 @@ li {
   font-size: var(--grid-three);
   line-height: 1.5;
 }
+
+.u-font--bold {
+  font-weight: 500;
+}
