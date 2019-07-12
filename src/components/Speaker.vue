@@ -55,16 +55,6 @@
       </div>
 
       <form-button
-        v-if="tickets"
-        to="/tickets"
-        tag="nuxt-link"
-        size="small"
-        class="c-speaker__button"
-      >
-        Buy Tickets
-      </form-button>
-
-      <form-button
         v-if="signup"
         :href="signup"
         rel="noopener"
@@ -119,8 +109,8 @@ export default {
       default: () => ({}),
     },
     tickets: {
-      type: String,
-      default: null,
+      type: Boolean,
+      default: false,
     },
     signup: {
       type: String,
@@ -257,6 +247,7 @@ export default {
     position: absolute;
     top: 0;
     right: 0;
+    min-width: calc(var(--grid-one) * 9);
     flex: 0 1 min-content;
     align-self: flex-end;
     padding: var(--grid-one) var(--grid-two);

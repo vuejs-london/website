@@ -55,5 +55,11 @@ export default {
     outline: none;
     text-decoration: none;
   }
+
+  &[disabled] {
+    background-color: var(--color-grey--light);
+    color: var(--color-text--light);
+    cursor: auto;
+  }
 }
 </style>

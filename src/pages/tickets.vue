@@ -1,10 +1,8 @@
 <template>
   <main>
     <page-section>
-      <form-button to="/workshops" tag="nuxt-link" class="p__workshops">
-        Workshop tickets
-      </form-button>
-      <heading variant="block">Conference Tickets</heading>
+      <heading variant="block" class="u-visually-hidden">Tickets</heading>
+      <heading level="2" variant="block">Conference tickets</heading>
       <location
         name="Cineworld at The O2"
         address="The O2, Peninsula Square, London SE10 0DX"
@@ -20,13 +18,69 @@
         are prepped and ready for everything related to Vue 3 and more...
       </paragraph>
 
-      <heading level="2" variant="block">Student &amp; low earning tickets</heading>
+      <ticket image="/img/logo-120.png" name="Super Early Bird" />
+      <ticket
+        image="/img/logo-120.png"
+        name="Early Bird"
+        href="https://www.universe.com/events/vue-js-london-2019-conference-tickets-mountain-view-V1BH5D?buttonColor=#3A66E5&buttonText=Get Tickets"
+      />
+
+      <heading level="2" variant="block">Workshop tickets</heading>
+      <location
+        name="CCT Venues"
+        address="193 Marsh Wall, Isle of Dogs, London E14 9RS"
+        image="/img/venue/cct-venues.jpg"
+        url="https://www.google.com/maps/place/CCT+Venues-Docklands/@51.5006797,-0.0170056,17z/data=!3m1!4b1!4m5!3m4!1s0x487602bba15e6c91:0x674d16e7ec0ae32c!8m2!3d51.5006797!4d-0.0148169"
+        date="05 October 2019"
+      />
+
+      <ticket
+        image="/img/logo-120.png"
+        name="Motion Design with Vue"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+      />
+      <ticket
+        image="/img/logo-120.png"
+        name="Rea11y Simple A11y: A Focused Accessibility Workshop"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+      />
+
+      <ticket
+        image="/img/logo-120.png"
+        name="Proven patterns for building Vue apps"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+      />
+      <ticket
+        image="/img/logo-120.png"
+        name="Scaling applications with Vuex"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+      />
+      <ticket
+        image="/img/logo-120.png"
+        name="Fundamentals of Vue"
+        time="09:00 - 17:00"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+      />
+      <ticket
+        image="/img/logo-120.png"
+        name="In-depth Application Testing with Vue"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+      />
+      <ticket
+        image="/img/logo-120.png"
+        name="E2E testing with Cypress"
+        time="09:00 - 17:00"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+      />
+
+      <br />
+      <heading level="2">Student &amp; low earning tickets</heading>
       <paragraph>
         If you are a student or a low earner or unemployed, you can get an additional discount.
         Please email team@vuejs.london with proof and we will send you a code to redeem your ticket.
       </paragraph>
 
-      <heading level="2" variant="block">Payment Plan</heading>
+      <heading level="2">Payment Plan</heading>
       <paragraph>
         We offer an optional payment plan thanks for our tickets, thanks to our ticket platform.
         This allows you to spread the cost across four equal payments with
@@ -39,11 +93,11 @@
 </template>
 
 <script>
-import FormButton from '~/components/FormButton.vue'
 import Heading from '~/components/Heading.vue'
 import Location from '~/components/Location.vue'
 import PageSection from '~/components/PageSection.vue'
 import Paragraph from '~/components/Paragraph.vue'
+import Ticket from '~/components/Ticket.vue'
 
 export default {
   head: {
@@ -51,20 +105,16 @@ export default {
   },
 
   components: {
-    FormButton,
     Location,
     Heading,
     PageSection,
     Paragraph,
+    Ticket,
   },
 
   mounted() {
     const element = document.createElement('script')
     element.src = 'https://www.universe.com/embed2.js'
-    element.dataset.widgetType = 'universe-ticket'
-    element.dataset.targetType = 'Listing'
-    element.dataset.targetId = 'vue-js-london-2019-conference-tickets-mountain-view-V1BH5D'
-    element.dataset.state = 'buttonColor=#42b883&buttonText=Get Tickets'
 
     this.$refs.tickets && this.$refs.tickets.append(element)
   },
@@ -74,14 +124,6 @@ export default {
 <style lang="postcss" scoped>
 .tickets {
   margin: var(--grid-eight) 0;
-}
-
-.p__workshops {
-  position: sticky;
-  z-index: var(--z-index-button-sticky);
-  top: calc(var(--grid-ten) - 3px);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .p__desc {

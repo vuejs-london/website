@@ -1,8 +1,6 @@
 <template>
   <main>
     <page-section>
-      <form-button to="/tickets" tag="nuxt-link" class="p__tickets">Conference tickets</form-button>
-
       <heading variant="block">Workshops</heading>
       <location
         name="CCT Venues"
@@ -13,7 +11,12 @@
       />
 
       <speaker-list columns="2">
-        <speaker image="/img/logo-120.png" topic="Motion Design with Vue" time="09:00 - 17:00">
+        <speaker
+          image="/img/logo-120.png"
+          topic="Motion Design with Vue"
+          time="09:00 - 17:00"
+          tickets
+        >
           <paragraph>
             In this workshop I’ll walk you through some fundamental aspects of designing motion for
             the web. How you can use transitions and animations to improve the user experience and
@@ -29,6 +32,7 @@
           image="/img/logo-120.png"
           topic="Rea11y Simple A11y: A Focused Accessibility Workshop"
           time="09:00 - 13:00"
+          tickets
         >
           <paragraph>
             This is a half-day workshop in the morning.
@@ -48,6 +52,7 @@
           image="/img/logo-120.png"
           topic="Proven patterns for building Vue apps"
           time="09:00 - 17:00"
+          tickets
         >
           <paragraph>
             In this workshop, we'll cover everything you need to know to get started building
@@ -60,6 +65,7 @@
           image="/img/logo-120.png"
           topic="Scaling applications with Vuex"
           time="09:00 - 17:00"
+          tickets
         >
           <paragraph>
             In Vue.js, it is quite simple to work with components, and share data among them using
@@ -109,7 +115,7 @@
             one part of exercises where we get our hands on Vuex and practice what we learn.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Fundamentals of Vue" time="09:00 - 17:00">
+        <speaker image="/img/logo-120.png" topic="Fundamentals of Vue" time="09:00 - 17:00" tickets>
           <paragraph>
             This workshop will teach you the fundamentals of Vue.js so you can start being
             productive and building apps immediately. With visual animations and analogies that make
@@ -182,6 +188,7 @@
           image="/img/logo-120.png"
           topic="In-depth Application Testing with Vue"
           time="09:00 - 17:00"
+          tickets
         >
           <paragraph>
             Working with Vue is a lot of fun and you can build amazing applications with it. When
@@ -226,7 +233,12 @@
             the way, as you'll end up writing simpler and more precise code.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="E2E testing with Cypress" time="09:00 - 17:00">
+        <speaker
+          image="/img/logo-120.png"
+          topic="E2E testing with Cypress"
+          time="09:00 - 17:00"
+          tickets
+        >
           <paragraph>
             We all want to consistently ship quality software. One of the best ways to do that is by
             end-to-end (E2E) testing our apps to simulate the real actions of our users. However,
@@ -326,14 +338,11 @@
         workshops at this time. This means you are purchasing based on the content you really want
         to know, and not based on the popularity of the presenters.
       </paragraph>
-
-      <div ref="tickets" class="tickets"></div>
     </page-section>
   </main>
 </template>
 
 <script>
-import FormButton from '~/components/FormButton.vue'
 import Heading from '~/components/Heading'
 import List from '~/components/List'
 import ListItem from '~/components/ListItem'
@@ -349,7 +358,6 @@ export default {
   },
 
   components: {
-    FormButton,
     Heading,
     Location,
     List,
@@ -358,17 +366,6 @@ export default {
     Paragraph,
     Speaker,
     SpeakerList,
-  },
-
-  mounted() {
-    const element = document.createElement('script')
-    element.src = 'https://www.universe.com/embed2.js'
-    element.dataset.widgetType = 'universe-ticket'
-    element.dataset.targetType = 'Listing'
-    element.dataset.targetId = 'vue-js-london-2019-workshops-tickets-london-ZGMY90'
-    element.dataset.state = 'buttonColor=#42b883&buttonText=Get Tickets'
-
-    this.$refs.tickets && this.$refs.tickets.append(element)
   },
 }
 </script>

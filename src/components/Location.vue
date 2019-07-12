@@ -105,6 +105,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding: var(--grid-three);
+    padding-top: var(--grid-six);
 
     @media (--tablet-small) {
       padding: var(--grid-three) var(--grid-six);
@@ -121,6 +122,7 @@ export default {
     position: absolute;
     top: 0;
     right: 0;
+    min-width: calc(var(--grid-one) * 9);
     flex: 0 1 min-content;
     align-self: flex-end;
     padding: var(--grid-one) var(--grid-two);
