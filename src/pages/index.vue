@@ -86,8 +86,7 @@
         </speaker>
       </speaker-list>
 
-      <heading variant="block">Our Sponsors</heading>
-
+      <heading level="2" variant="block">Our Sponsors</heading>
       <sponsor-group columns="1" size="medium">
         <template #title>
           Silver
