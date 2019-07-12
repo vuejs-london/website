@@ -85,18 +85,11 @@
           </paragraph>
         </speaker>
       </speaker-list>
-
-      <heading level="2" variant="block">Links</heading>
-      <form-button to="/tickets" tag="nuxt-link" class="p__tickets">Conference tickets</form-button>
-      <form-button to="/workshops" tag="nuxt-link">View workshops</form-button>
-      <form-button to="/cfp" tag="nuxt-link">Submit CFP</form-button>
-      <form-button to="/diversity" tag="nuxt-link">Diversity matters</form-button>
     </page-section>
   </main>
 </template>
 
 <script>
-import FormButton from '~/components/FormButton'
 import Heading from '~/components/Heading'
 import Hero from '~/components/Hero'
 import PageSection from '~/components/PageSection'
@@ -106,7 +99,6 @@ import SpeakerList from '~/components/SpeakerList'
 
 export default {
   components: {
-    FormButton,
     Heading,
     Hero,
     PageSection,
