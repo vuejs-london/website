@@ -1,4 +1,4 @@
-ö<script>
+<script>
 export default {
   functional: true,
 

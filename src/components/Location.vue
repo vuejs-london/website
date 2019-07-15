@@ -18,6 +18,7 @@
       tag="a"
       size="small"
       class="c-location__button"
+      data-css
     >
       Visit
     </form-button>
@@ -118,7 +119,7 @@ export default {
     text-transform: uppercase;
   }
 
-  &__button {
+  &__button[data-css] {
     position: absolute;
     top: 0;
     right: 0;
