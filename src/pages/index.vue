@@ -99,6 +99,18 @@
         />
       </sponsor-group>
 
+      <sponsor-group columns="1">
+        <template #title>
+          Video
+        </template>
+        <sponsor
+          href="https://www.vuemastery.com/?utm_campaign=conference&utm_source=vuelondon"
+          rel="noopener"
+          image="/img/sponsors/vuemastery.svg"
+          title="VueMastery"
+        />
+      </sponsor-group>
+
       <form-button
         tag="a"
         href="https://drive.google.com/file/d/1YYHlMjzAkrqSJwdGN_vSg9L4Y1hi17D1/view"
