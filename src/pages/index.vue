@@ -92,7 +92,7 @@
           Silver
         </template>
         <sponsor
-          href="https://progress.com"
+          href="https://www.telerik.com/kendo-ui#vue"
           rel="noopener"
           image="/img/sponsors/progress.png"
           title="Progress"
