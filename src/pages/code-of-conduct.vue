@@ -6,14 +6,14 @@
       <heading variant="3" tag="h2">Expected behaviours</heading>
       <paragraph>
         Vue.js London strives on being a healthy community! Part of being a community is to set
-        standards on how we make our events and surrounding communication inclusive, judgement- and
-        harassment-free place for individuals no matter of background or experience.
+        standards on how we make our events and surrounding communication an inclusive, judgement
+        and harassment-free place for individuals regardless of background or experience.
       </paragraph>
       <paragraph>
         We aim to make sure that our community is a safe place to learn, connect, and grow together.
         This Code of Conduct applies to all events run by Vue.js London, including any
         self-organised events derived from our events. We also expect the same code of conduct to
-        carry through any other medium that relates to Vue.js London, for example, social media,
+        carry through to any other medium that relates to Vue.js London, for example, social media,
         blogs, forums and chat services.
       </paragraph>
       <paragraph>
@@ -22,8 +22,8 @@
       </paragraph>
       <heading level="4" tag="h3">Be kind and considerate</heading>
       <paragraph>
-        Approach any interaction with consideration, communication and discussions should be
-        friendly and welcoming and not exclusive to any one of different backgrounds, experience, of
+        Approach any interaction with consideration. Communication and discussions should be
+        friendly and welcoming and not exclusive to anyone of different backgrounds, experience, or
         opinion.
       </paragraph>
 
@@ -38,18 +38,18 @@
       <paragraph>
         Your actions are your own, think carefully about your choices and act in a responsible
         manner. We all make mistakes, own up to those mistakes and apologise if you feel you may
-        have harmed offended others. Work to make the wrong right.
+        have harmed or offended others. Work to make the wrong right.
       </paragraph>
 
       <heading level="3" tag="h2">Anti-Harassment Policy</heading>
       <paragraph>
         Our events and communication mediums are dedicated to providing a harassment-free experience
-        for everyone, regardless of any difference. Including but not limited to gender, gender
-        identity and expression, age, sexual orientation, disability, physical appearance, body
-        size, race, ethnicity, religion (or lack thereof), or technology choices.
+        for everyone, regardless of background or experience. Including but not limited to gender,
+        gender identity and expression, age, sexual orientation, disability, physical appearance,
+        body size, race, ethnicity, religion (or lack thereof), or technology choices.
       </paragraph>
       <paragraph>
-        We do not tolerate harassment of conference participants in any form. It is obliged to
+        We do not tolerate harassment of conference participants in any form. You are obliged to
         refrain from content and imagery that may offend in any context; including talks, sponsor
         material, workshops, parties, social media, and chat channels. Conference participants
         violating these rules may be sanctioned or expelled from the conference without a refund at
@@ -80,7 +80,7 @@
           Unwelcome attention
         </list-item>
         <list-item>
-          Advocating for, or encouraging, any of the above behaviour
+          Advocating for, or encouraging, any of the above behaviours
         </list-item>
       </list>
       <paragraph>
@@ -102,7 +102,7 @@
           Communicating in a ‘tone’ you don’t find congenial
         </list-item>
         <list-item>
-          Criticizing racist, sexist, cissexist, or otherwise oppressive behavior or assumptions
+          Criticising racist, sexist, cissexist, or otherwise oppressive behaviour or assumptions
         </list-item>
       </list>
 
@@ -110,17 +110,17 @@
       <paragraph>
         Diversity and self-expression are essential. Therefore, we encourage all attendees to
         identify and express how they wish, including the use of any facilities they feel most
-        comfortable in, regardless of gender expression. Please do not questions someones use of
-        facilities, and they believe they know and are conscious of where they are. If you witness
-        someone being made to feel unwelcome, or someone makes you feel unwelcome while using any
-        facilities, please reach out to a conference staff member so we can assist you.
+        comfortable in, regardless of gender expression. Please do not question someones use of
+        facilities, as they know and are conscious of where they are. If you witness someone being
+        made to feel unwelcome, or someone makes you feel unwelcome while using any facilities,
+        please reach out to a conference staff member so we can assist you.
       </paragraph>
 
       <heading level="3" tag="h2">Reporting</heading>
       <paragraph>
-        Before filing a report please ensure that you are safe. If you are an event you can always
-        contact any member of staff of the venue, well-known figure (speaker), security or
-        organisers to ask for assistance. Your safety is of utmost importance.
+        Before filing a report please ensure that you are safe. If you are at event you can always
+        contact any venue staff member, well-known figure (speaker), security or organisers to ask
+        for assistance. Your safety is of utmost importance.
       </paragraph>
       <paragraph>
         If you experience or witness unacceptable behaviour—or have any other concerns—please report
@@ -147,7 +147,7 @@
           you.
         </list-item>
         <list-item>
-          If there are additional witnesses, please include them as well.
+          If there are additional witnesses, please include their details as well.
         </list-item>
         Your account of what occurred, and if you believe the incident is ongoing.
         <list-item>
@@ -165,21 +165,21 @@
 
       <heading level="3" tag="h2">Enforcement</heading>
       <paragraph>
-        Adherence to and acceptance of this Code of Conduct is a condition of entry of any event,
-        and should be carried out to events that occur due to any main event such as group dinners.
+        Adherence to and acceptance of this Code of Conduct is a condition to any event, including
+        those derived from main events such as group dinners
       </paragraph>
       <paragraph>
-        Participants asked to stop any harassing behavior are expected to comply immediately. This
-        includes all attendees, sponsors, speakers, organizers, volunteers, and venue or vendor
+        Participants asked to stop any harassing behaviour are expected to comply immediately. This
+        includes all attendees, sponsors, speakers, organisers, volunteers, and venue or vendor
         staff.
       </paragraph>
       <paragraph>
-        If a participant engages in harassing behaviour before during or after an event, event
-        organizers retain the right to take any actions to keep the event a welcoming environment
+        If a participant engages in harassing behaviour before, during or after an event, event
+        organisers retain the right to take any actions to keep the event a welcoming environment
         for all participants. This includes, but is not limited to, warning the offender, expulsion
         from the conference without the possibility for refund, and a ban on attending future
         events. If behaviour is associated to be criminal based on local laws we include the right
-        to inform any law enforemcement of the report.
+        to inform any law enforcement of the report.
       </paragraph>
 
       <heading level="3" tag="h2">Contact Us</heading>
