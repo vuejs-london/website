@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <g transform="matrix(1,0,0,1,0,0)">
+    <path d="M 6,8.25V22.5c0,0.414,0.336,0.75,0.75,0.75h10.5c0.414,0,0.75-0.336,0.75-0.75V8.25 " stroke="#000000"
+      fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path
+      d="M 18,12.75h3.75 c0.414,0,0.75-0.336,0.75-0.75V6.75c0-3.314-2.686-6-6-6H15c0,1.657-1.343,3-3,3s-3-1.343-3-3H7.5c-3.314,0-6,2.686-6,6V12 c0,0.414,0.336,0.75,0.75,0.75H6"
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

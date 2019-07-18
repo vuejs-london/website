@@ -2,9 +2,7 @@
   <main>
     <page-section>
       <heading variant="block">Why Vue.js London</heading>
-      <heading level="5" tag="p">
-        Discover what makes Vue.js London a conference worth attending.
-      </heading>
+      <why-icons />
 
       <heading level="2" variant="block">Discover</heading>
       <paragraph>
@@ -98,6 +96,7 @@
 import Heading from '~/components/Heading.vue'
 import PageSection from '~/components/PageSection.vue'
 import Paragraph from '~/components/Paragraph.vue'
+import WhyIcons from '~/components/WhyIcons.vue'
 
 export default {
   head: {
@@ -108,6 +107,7 @@ export default {
     Heading,
     PageSection,
     Paragraph,
+    WhyIcons,
   },
 }
 </script>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <g transform="matrix(1,0,0,1,0,0)">
+    <path d="M 12,0.75c1.657,0,3,1.343,3,3s-1.343,3-3,3s-3-1.343-3-3S10.343,0.75,12,0.75z " stroke="#000000" fill="none"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 15.75,14.25V12 c0-2.071-1.679-3.75-3.75-3.75S8.25,9.929,8.25,12v2.25h1.5l0.75,6h3l0.75-6H15.75z "
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 4.5,3.75c1.243,0,2.25,1.007,2.25,2.25 S5.743,8.25,4.5,8.25S2.25,7.243,2.25,6S3.257,3.75,4.5,3.75z "
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path
+      d="M 5.7,9.947c-1.964-0.661-4.093,0.396-4.754,2.36 C0.817,12.691,0.75,13.094,0.75,13.5v0.75h1.5L3,18.75h3l0.376-2.256 "
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path
+      d="M 19.5,3.75c1.243,0,2.25,1.007,2.25,2.25 s-1.007,2.25-2.25,2.25S17.25,7.243,17.25,6S18.257,3.75,19.5,3.75z "
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path
+      d="M 18.3,9.947c1.964-0.661,4.093,0.396,4.754,2.36 c0.129,0.384,0.196,0.787,0.196,1.193v0.75h-1.5L21,18.75h-3l-0.376-2.256 "
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 23.25,21c0,1.243-5.037,2.25-11.25,2.25 S0.75,22.243,0.75,21" stroke="#000000" fill="none"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

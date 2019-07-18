@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <g transform="matrix(1,0,0,1,0,0)">
+    <path d="M 0.75,23.25h4.821c1.085-0.02,1.948-0.915,1.929-2v-2c0.019-1.085-0.844-1.98-1.929-2H0.75 " stroke="#000000"
+      fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 5.641,23.25H21.75 c0.828,0,1.5-0.672,1.5-1.5v-3c0-0.828-0.672-1.5-1.5-1.5H5.641 " stroke="#000000"
+      fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 20.25,17.25v6 " stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path d="M 17.25,17.25v6 " stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path d="M 14.25,17.25v6 " stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path d="M 11.25,17.25v6 " stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path d="M 4.5,20.25H0.75 " stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path
+      d="M 16.2,17.25V16c-0.005-0.237-0.162-0.444-0.388-0.513c-1.616-0.51-2.688-2.044-2.612-3.737 c0-3.789,4.651,0.945,4.8-10.435c-0.011-0.321-0.279-0.573-0.6-0.565H6.6C6.279,0.742,6.011,0.994,6,1.315 c0.148,11.38,4.8,6.646,4.8,10.435c0.078,1.695-0.995,3.231-2.614,3.741C7.962,15.56,7.806,15.765,7.8,16v1.25H16.2z "
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path
+      d="M 6.023,2.25 H3.55C3.254,2.241,3.007,2.474,2.999,2.77C2.998,2.789,2.999,2.807,3,2.826c0.131,1.379,0.774,4.752,3.925,4.673 "
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path
+      d="M 17.977,2.25 h2.542c0.295-0.008,0.541,0.226,0.548,0.521c0,0.018,0,0.037-0.001,0.055c-0.132,1.389-0.783,4.8-3.992,4.67"
+      stroke="#000000" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

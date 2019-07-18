@@ -2,6 +2,7 @@
   <main>
     <hero />
     <page-section>
+      <why-icons class="p__icons" />
       <heading level="2" variant="block">Announced Talks</heading>
       <speaker-list columns="2">
         <speaker image="/img/logo-120.png" topic="Scalable data visualisation with D3 and Vue">
@@ -150,6 +151,7 @@ import Speaker from '~/components/Speaker'
 import SpeakerList from '~/components/SpeakerList'
 import Sponsor from '~/components/Sponsor'
 import SponsorGroup from '~/components/SponsorGroup'
+import WhyIcons from '~/components/WhyIcons'
 
 export default {
   components: {
@@ -162,6 +164,7 @@ export default {
     SpeakerList,
     Sponsor,
     SponsorGroup,
+    WhyIcons,
   },
 
   head: {
@@ -169,3 +172,9 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss" scoped>
+.p__icons {
+  margin-top: var(--grid-six);
+}
+</style>
