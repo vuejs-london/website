@@ -84,6 +84,26 @@
             Function-based component API, and have a little laugh along the way.
           </paragraph>
         </speaker>
+        <speaker image="/img/logo-120.png" topic="Decoding Vue 3">
+          <paragraph>
+            Some of the biggest changes in Vue 3 aren't the easiest to understand. I will explain
+            some of the complex features of Vue 3 visually with animation.
+          </paragraph>
+          <paragraph>
+            Consider this a guided tour of advanced concepts to grasp in order to start using Vue in
+            new and even more powerful ways.
+          </paragraph>
+        </speaker>
+        <speaker image="/img/logo-120.png" topic="A new Router to guide your Apps">
+          <paragraph>
+            Vue official router has been a pleasure to build apps with but as the community grows,
+            so do the router needs. However, it hasn't kept up as good as I wish it had with all the
+            good proposals out there. As a result, we have also taken more time to work on the new
+            version of Vue router and shaping an API that will serve Vue 2 and Vue 3. A more
+            extensible router, easier to contribute and new architecture from scratch. Let's talk
+            about what has changed in the new Router and all the improvements we are bringing.
+          </paragraph>
+        </speaker>
       </speaker-list>
 
       <heading level="2" variant="block">Our Sponsors</heading>
