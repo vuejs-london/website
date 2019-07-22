@@ -151,6 +151,7 @@ export default {
     border-radius: var(--grid-half);
     box-shadow: var(--c-speaker-item-shadow);
     cursor: pointer;
+    outline-color: var(--color-green);
 
     &:hover,
     &:active,
