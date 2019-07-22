@@ -105,6 +105,25 @@
             about what has changed in the new Router and all the improvements we are bringing.
           </paragraph>
         </speaker>
+        <speaker image="/img/logo-120.png" topic="Types of Vue">
+          <paragraph>
+            TypeScript offers a lot of benefits over JavaScript such as type safety and better
+            auto-completion in editors, but these benefits do not directly trickle down to Vue. In
+            this talk, I trace through improvements in the Vue Language Server that enables type
+            safety of Vue Single File Components, and what that entails for writing type-safe Vue
+            code.
+          </paragraph>
+          <paragraph>
+            I will talk about innovations in Vue Language Server that could improve Vue developer's
+            productivity. Finally, we will examine how we can leverage types to build a better
+            ecosystem of Vue components.
+          </paragraph>
+        </speaker>
+        <speaker image="/img/logo-120.png" topic="Keynote">
+          <paragraph>
+            Description to be confirmed
+          </paragraph>
+        </speaker>
       </speaker-list>
 
       <heading level="2" variant="block">Our Sponsors</heading>
