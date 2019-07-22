@@ -22,6 +22,7 @@
 
 <script>
 import Heading from '~/components/Heading.vue'
+import Lightbox from 'vue-easy-lightbox'
 import PageImage from '~/components/PageImage.vue'
 import PageSection from '~/components/PageSection.vue'
 import Vue from 'vue'
@@ -30,6 +31,10 @@ const images = new Array(473).fill('').map((_, index) => `${index + 1}`.padStart
 
 const imagesSmall = images.map(value => `/2018/images/gallery/10-percent/${value}.jpg`)
 const imagesFull = images.map(value => `/2018/images/gallery/original/${value}.jpg`)
+
+if (process.client) {
+  Vue.use(Lightbox)
+}
 
 export default {
   layout: 'previous/2018',
@@ -50,13 +55,6 @@ export default {
       imagesFull,
       visible: false,
       index: 0,
-    }
-  },
-
-  mounted() {
-    if (process.client) {
-      const Lightbox = require('vue-easy-lightbox')
-      Vue.use(Lightbox)
     }
   },
 
