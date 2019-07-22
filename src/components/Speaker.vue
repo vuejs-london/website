@@ -170,9 +170,6 @@ export default {
   }
 
   &__large {
-    display: flex;
-    flex-wrap: wrap;
-
     ^&__social {
       opacity: 1;
       transform: translateY(0);
