@@ -126,7 +126,6 @@ export default {
 
     @media (--tablet-large) {
       width: initial;
-      padding-left: var(--grid-two);
     }
 
     & > * {
