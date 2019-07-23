@@ -19,9 +19,10 @@
       </paragraph>
 
       <ticket image="/img/logo-120.png" name="Super Early Bird" />
+      <ticket image="/img/logo-120.png" name="Early Bird" />
       <ticket
         image="/img/logo-120.png"
-        name="Early Bird"
+        name="Regular Bird"
         href="https://www.universe.com/events/vue-js-london-2019-conference-tickets-mountain-view-V1BH5D?buttonColor=#3A66E5&buttonText=Get Tickets"
       />
 
