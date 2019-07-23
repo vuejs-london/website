@@ -20,7 +20,7 @@
       class="c-location__button"
       data-css
     >
-      Visit
+      View Map
     </form-button>
   </article>
 </template>
@@ -73,6 +73,7 @@ export default {
   box-sizing: border-box;
   flex-wrap: wrap;
   border: 1px solid var(--color-grey--light);
+  margin-bottom: var(--grid-six);
   border-radius: var(--grid-half);
   box-shadow: var(--c-location-item-shadow);
 

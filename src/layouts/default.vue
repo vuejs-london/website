@@ -29,8 +29,9 @@ export default {
     this.navbarLinks = [
       { to: '/tickets', text: 'Tickets' },
       { to: '/workshops', text: 'Workshops' },
-      { to: '/why', text: 'Why' },
       { to: '/schedule', text: 'Schedule' },
+      { to: '/why', text: 'Why' },
+      { to: '/guide', text: 'Guide' },
       { to: '/diversity', text: 'Diversity' },
       {
         href: 'https://www.meetup.com/vuejs-london/',
@@ -76,10 +77,12 @@ export default {
         text: 'Store',
       },
       { to: '/2018', text: '2018' },
+
       { to: '/tickets', text: 'Tickets' },
       { to: '/workshops', text: 'Workshops' },
-      { to: '/why', text: 'Why' },
       { to: '/schedule', text: 'Schedule' },
+      { to: '/why', text: 'Why' },
+      { to: '/guide', text: 'Guide' },
       { to: '/diversity', text: 'Diversity' },
       { to: '/code-of-conduct', text: 'Code of Conduct' },
       { to: '/terms-and-conditions', text: 'Terms and Conditions' },

@@ -10,3 +10,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
+
+strong {
+  font-weight: 400;
+}
+
+.u-clearfix {
+  clear: both;
+}
