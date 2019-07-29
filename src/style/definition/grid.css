@@ -1,7 +1,7 @@
 :root {
   --grid-base: 8px;
 
-  --grid-quater: calc(var(--grid-base) / 4);
+  --grid-quarter: calc(var(--grid-base) / 4);
   --grid-half: calc(var(--grid-base) / 2);
   --grid-one: var(--grid-base);
   --grid-two: calc(var(--grid-base) * 2);

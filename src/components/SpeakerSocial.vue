@@ -3,6 +3,7 @@
     <anchor
       v-if="github"
       :href="github"
+      tabindex="-1"
       class="c-speaker-social__icon c-speaker-social__icon--github"
       rel="noopener"
       target="_blank"
@@ -10,6 +11,7 @@
     <anchor
       v-if="gitlab"
       :href="gitlab"
+      tabindex="-1"
       class="c-speaker-social__icon c-speaker-social__icon--gitlab"
       rel="noopener"
       target="_blank"
@@ -17,6 +19,7 @@
     <anchor
       v-if="twitter"
       :href="twitter"
+      tabindex="-1"
       class="c-speaker-social__icon c-speaker-social__icon--twitter"
       rel="noopener"
       target="_blank"
@@ -53,7 +56,9 @@ export default {
 .c-speaker-social {
   &__icon {
     display: inline-block;
+    box-sizing: border-box;
     padding: var(--grid-half);
+    margin: 0 var(--grid-quarter);
     background-repeat: no-repeat;
     vertical-align: middle;
 

@@ -13,6 +13,7 @@
         :alt="title"
         class="c-schedule-event__image"
       />
+      <speaker-social v-bind="social" />
     </div>
     <div class="c-schedule-event__content-container">
       <div class="c-schedule-event__content">
@@ -51,11 +52,14 @@
 
 <script>
 import Heading from '~/components/Heading.vue'
+import SpeakerSocial from '~/components/SpeakerSocial.vue'
 
 export default {
   components: {
     Heading,
+    SpeakerSocial,
   },
+
   props: {
     title: {
       type: String,
@@ -84,6 +88,10 @@ export default {
     duration: {
       type: String,
       default: null,
+    },
+    social: {
+      type: Object,
+      default: () => ({}),
     },
   },
 
@@ -119,6 +127,12 @@ export default {
   &--has-description {
     cursor: pointer;
     outline-color: var(--color-green);
+  }
+
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__image {
