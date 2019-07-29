@@ -47,8 +47,8 @@
       <div class="c-speaker__aside">
         <img :src="image" :alt="name" class="c-speaker__image" />
         <div class="c-speaker__heading">
-          <heading level="5" tag="div" variant="style-only">{{ name }}</heading>
-          <heading level="6" tag="div" variant="style-only">{{ title || topic }}</heading>
+          <heading level="5" tag="div" variant="style-only">{{ topic }}</heading>
+          <heading level="6" tag="div" variant="style-only" color="light">{{ name }}</heading>
         </div>
         <speaker-social v-bind="social" class="c-speaker__social" />
         <div v-if="time" class="c-speaker__time">{{ time }}</div>
