@@ -17,19 +17,19 @@
           topic="MC for Vue.js London 2019"
         >
           <paragraph>
-            Debbie works as a Frontend Tech Lead at Patterson Agency a digital agency in Mallorca,
-            Spain.With over 10 years of experience in Frontend development, she has a special love
-            for JavaScript frameworks, especially Vue.JS and Nuxt.js and improving performance with
+            Debbie works as a Frontend Tech Lead at Patterson Agency, a digital agency in Mallorca,
+            Spain. With over 10 years of experience in Frontend development, she has a special love
+            for JavaScript frameworks, especially Vue.js and Nuxt.js and improving performance with
             webpack.
           </paragraph>
           <paragraph>
             Debbie holds a Frontend and FullStack Tech Degree and is Microsoft certified. She is an
             international speaker and organizer of MallorcaJS and VueSpain. She also works as a tech
             degree moderator for Treehouse and a mentor for OpenClassrooms and is a webpack and
-            nuxt.js contributor. She is a teacher at Vue School and a writer for Ultimate Courses.
+            Nuxt.js contributor. She is a teacher at Vue School and a writer for Ultimate Courses.
           </paragraph>
           <paragraph>
-            When she is not programming she loves doing sport – Taekwondo, Skiing, Cycling, Running…
+            When she is not programming she loves doing sport especially taekwondo, skiing, cycling and running.
           </paragraph>
         </speaker>
       </speaker-list>
