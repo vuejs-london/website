@@ -23,7 +23,7 @@
       <ticket
         image="/img/logo-120.png"
         name="Regular Bird"
-        href="https://www.universe.com/events/vue-js-london-2019-conference-tickets-mountain-view-V1BH5D?buttonColor=#3A66E5&buttonText=Get Tickets"
+        href="https://www.universe.com/events/vue-js-london-2019-conference-tickets-mountain-view-V1BH5D"
       />
 
       <heading level="2" variant="block">Workshop tickets</heading>
@@ -38,40 +38,40 @@
       <ticket
         image="/img/logo-120.png"
         name="Motion Design with Vue"
-        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
       />
       <ticket
         image="/img/logo-120.png"
         name="Rea11y Simple A11y: A Focused Accessibility Workshop"
-        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
       />
 
       <ticket
         image="/img/logo-120.png"
         name="Proven patterns for building Vue apps"
-        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
       />
       <ticket
         image="/img/logo-120.png"
         name="Scaling applications with Vuex"
-        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
       />
       <ticket
         image="/img/logo-120.png"
         name="Fundamentals of Vue"
         time="09:00 - 17:00"
-        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
       />
       <ticket
         image="/img/logo-120.png"
         name="In-depth Application Testing with Vue"
-        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
       />
       <ticket
         image="/img/logo-120.png"
         name="E2E testing with Cypress"
         time="09:00 - 17:00"
-        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90?buttonColor=#3A66E5&buttonText=Get Tickets"
+        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
       />
 
       <br />
