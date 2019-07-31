@@ -20,8 +20,8 @@
 
           <form-button
             v-if="tickets"
-            to="/tickets"
-            tag="nuxt-link"
+            :href="tickets"
+            tag="a"
             size="small"
             class="c-speaker__button"
           >
@@ -109,8 +109,8 @@ export default {
       default: () => ({}),
     },
     tickets: {
-      type: Boolean,
-      default: false,
+      type: String,
+      default: null,
     },
     signup: {
       type: String,

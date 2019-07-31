@@ -15,7 +15,7 @@
           image="/img/logo-120.png"
           topic="Motion Design with Vue"
           time="09:00 - 17:00"
-          tickets
+          tickets="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
         >
           <paragraph>
             In this workshop I’ll walk you through some fundamental aspects of designing motion for
@@ -32,7 +32,7 @@
           image="/img/logo-120.png"
           topic="Rea11y Simple A11y: A Focused Accessibility Workshop"
           time="09:00 - 13:00"
-          tickets
+          tickets="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
         >
           <paragraph>
             This is a half-day workshop in the morning.
@@ -52,7 +52,7 @@
           image="/img/logo-120.png"
           topic="Proven patterns for building Vue apps"
           time="09:00 - 17:00"
-          tickets
+          tickets="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
         >
           <paragraph>
             In this workshop, we'll cover everything you need to know to get started building
@@ -65,7 +65,7 @@
           image="/img/logo-120.png"
           topic="Scaling applications with Vuex"
           time="09:00 - 17:00"
-          tickets
+          tickets="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
         >
           <paragraph>
             In Vue.js, it is quite simple to work with components, and share data among them using
@@ -115,7 +115,12 @@
             one part of exercises where we get our hands on Vuex and practice what we learn.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Fundamentals of Vue" time="09:00 - 17:00" tickets>
+        <speaker
+          image="/img/logo-120.png"
+          topic="Fundamentals of Vue"
+          time="09:00 - 17:00"
+          tickets="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
+        >
           <paragraph>
             This workshop will teach you the fundamentals of Vue.js so you can start being
             productive and building apps immediately. With visual animations and analogies that make
@@ -188,7 +193,7 @@
           image="/img/logo-120.png"
           topic="In-depth Application Testing with Vue"
           time="09:00 - 17:00"
-          tickets
+          tickets="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
         >
           <paragraph>
             Working with Vue is a lot of fun and you can build amazing applications with it. When
@@ -237,7 +242,7 @@
           image="/img/logo-120.png"
           topic="E2E testing with Cypress"
           time="09:00 - 17:00"
-          tickets
+          tickets="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
         >
           <paragraph>
             We all want to consistently ship quality software. One of the best ways to do that is by
@@ -339,6 +344,8 @@
         to know, and not based on the popularity of the presenters.
       </paragraph>
     </page-section>
+
+    <div ref="tickets" class="tickets"></div>
   </main>
 </template>
 
@@ -366,6 +373,13 @@ export default {
     Paragraph,
     Speaker,
     SpeakerList,
+  },
+
+  mounted() {
+    const element = document.createElement('script')
+    element.src = 'https://www.universe.com/embed2.js'
+
+    this.$refs.tickets && this.$refs.tickets.append(element)
   },
 }
 </script>
