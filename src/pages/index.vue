@@ -116,7 +116,16 @@
             Function-based component API, and have a little laugh along the way.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Decoding Vue 3">
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/greggpollack',
+            github: 'https://github.com/gregg',
+          }"
+          image="/img/speakers/gregg.jpg"
+          name="Gregg Pollack"
+          title="Teacher of Vue.js at Vue Mastery"
+          topic="Decoding Vue 3"
+        >
           <paragraph>
             Some of the biggest changes in Vue 3 aren't the easiest to understand. I will explain
             some of the complex features of Vue 3 visually with animation.

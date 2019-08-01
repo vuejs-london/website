@@ -167,9 +167,13 @@
             duration="30mins"
           />
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/greggpollack',
+              github: 'https://github.com/gregg',
+            }"
+            image="/img/speakers/gregg.jpg"
             title="Decoding Vue 3"
-            subtitle="Speaker TBA"
+            subtitle="Gregg Pollack"
             time="15:15 - 15:45"
             duration="30mins"
           >
