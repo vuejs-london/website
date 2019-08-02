@@ -53,7 +53,13 @@
           </paragraph>
         </speaker>
         <speaker
-          image="/img/logo-120.png"
+          :social="{
+            twitter: 'https://twitter.com/filrakowski',
+            github: 'https://github.com/filrak',
+          }"
+          image="/img/speakers/filip-rakowski.jpg"
+          name="Filip Rakowski"
+          title="Co-founder Vue Storefront"
           topic="Identifying and solving performance issues in Vue applications"
         >
           <paragraph>
