@@ -29,7 +29,8 @@
             Nuxt.js contributor. She is a teacher at Vue School and a writer for Ultimate Courses.
           </paragraph>
           <paragraph>
-            When she is not programming she loves doing sport especially taekwondo, skiing, cycling and running.
+            When she is not programming she loves doing sport especially taekwondo, skiing, cycling
+            and running.
           </paragraph>
         </speaker>
       </speaker-list>
@@ -145,7 +146,7 @@
             about what has changed in the new Router and all the improvements we are bringing.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Types of Vue">
+        <speaker image="/img/logo-120.png" topic="Types in Vue">
           <paragraph>
             TypeScript offers a lot of benefits over JavaScript such as type safety and better
             auto-completion in editors, but these benefits do not directly trickle down to Vue. In

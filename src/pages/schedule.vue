@@ -111,7 +111,7 @@
           </schedule-event>
           <schedule-event
             image="/img/logo-120.png"
-            title="Types of Vue"
+            title="Types in Vue"
             subtitle="Speaker TBA"
             time="11:30 - 12:00"
             duration="30mins"
