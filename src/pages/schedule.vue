@@ -59,9 +59,13 @@
             <paragraph>Should we, or should we not consider this as a good approach?</paragraph>
           </schedule-event>
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/filrakowski',
+              github: 'https://github.com/filrak',
+            }"
+            image="/img/speakers/filip-rakowski.jpg"
             title="Identifying and solving performance issues in Vue applications"
-            subtitle="Speaker TBA"
+            subtitle="Filip Rakowski"
             time="10:00 - 10:30"
             duration="30mins"
           >
