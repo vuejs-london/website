@@ -142,7 +142,16 @@
             new and even more powerful ways.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="A new Router to guide your Apps">
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/posva',
+            github: 'https://github.com/posva',
+          }"
+          image="/img/speakers/eduardo-san-martin-morote.jpg"
+          name="Eduardo San Martin Morote"
+          title="Freelance and core Vue.js team member"
+          topic="A new Router to guide your Apps"
+        >
           <paragraph>
             Vue official router has been a pleasure to build apps with but as the community grows,
             so do the router needs. However, it hasn't kept up as good as I wish it had with all the
