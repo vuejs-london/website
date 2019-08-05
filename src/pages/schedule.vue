@@ -92,9 +92,13 @@
             duration="30mins"
           />
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/CodesOfRa',
+              github: 'https://github.com/CodesOfRa',
+            }"
+            image="/img/speakers/ramona-biscoveanu.jpg"
             title="Scalable data visualisation with D3 and Vue"
-            subtitle="Speaker TBA"
+            subtitle="Ramona Biscoveanu"
             time="11:00 - 11:30"
             duration="30mins"
           >

@@ -37,7 +37,16 @@
 
       <heading level="2" variant="block">Announced Talks</heading>
       <speaker-list columns="2">
-        <speaker image="/img/logo-120.png" topic="Scalable data visualisation with D3 and Vue">
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/CodesOfRa',
+            github: 'https://github.com/CodesOfRa',
+          }"
+          image="/img/speakers/ramona-biscoveanu.jpg"
+          name="Ramona Biscoveanu"
+          title="Javascript Developer + Machine Learning enthusiast"
+          topic="Scalable data visualisation with D3 and Vue"
+        >
           <paragraph>
             D3 is the best choice when you want to create complex and interactive data visualisation
             for the web. D3 works directly with the DOM. In contrast, Vue works with a virtual DOM.
