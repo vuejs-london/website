@@ -328,7 +328,8 @@
           signup="https://vuevixens.org/events/vue-london-2019"
         >
           <paragraph>
-            Join Boston Vue.js Co-Organizer Kristin Ruben for a fun web and mobile Vue.js workshop!
+            Join Boston Vue.js Co-Organizer Kristin Ruben and Raleigh-Durham Chapter Leader Maria
+            Lamardo for a fun mobile-focused Vue.js workshop!
           </paragraph>
           <paragraph>
             This event is free and open to anyone who identify as a woman and wants to learn about
