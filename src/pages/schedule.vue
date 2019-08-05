@@ -134,9 +134,13 @@
             </paragraph>
           </schedule-event>
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/posva',
+              github: 'https://github.com/posva',
+            }"
+            image="/img/speakers/eduardo-san-martin-morote.jpg"
             title="A new Router to guide your Apps"
-            subtitle="Speaker TBA"
+            subtitle="Eduardo San Martin Morote"
             time="12:00 - 12:30"
             duration="30mins"
           >
