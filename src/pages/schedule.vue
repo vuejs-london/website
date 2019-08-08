@@ -29,9 +29,13 @@
             duration="15mins"
           />
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/adamjahr',
+              github: 'https://github.com/atomjar',
+            }"
+            image="/img/speakers/adam-jahr.jpg"
             title="5 animations any Vue app can use"
-            subtitle="Speaker TBA"
+            subtitle="Adam Jahr"
             time="09:00 - 09:30"
             duration="30mins"
           >

@@ -94,7 +94,16 @@
           </paragraph>
           <paragraph>Should we, or should we not consider this as a good approach?</paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="5 animations any Vue app can use">
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/adamjahr',
+            github: 'https://github.com/atomjar',
+          }"
+          image="/img/speakers/adam-jahr.jpg"
+          name="Adam Jahr"
+          title="Instructor at VueMastery"
+          topic="5 animations any Vue app can use"
+        >
           <paragraph>
             We've heard that animating our web interfaces can improve user experience and even boost
             conversions, but what exactly should we be animating, and how?
