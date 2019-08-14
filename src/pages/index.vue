@@ -3,6 +3,31 @@
     <hero />
     <page-section>
       <why-icons class="p__icons" />
+      <heading level="2" variant="block">OS Awards</heading>
+      <div class="p__osawards">
+        <page-image
+          src="/img/osawards-page-image.jpg"
+          alt="Vue OS Awards"
+          decoding="async"
+          importance="low"
+          class="p__osawards-image"
+        />
+        <div class="p__osawards-copy">
+          <paragraph>
+            Celebrate the Vue.js Open Source Community, as we host the Vue OS Awards Ceromony! A 30
+            minute session dedicated to cheering on the community, and continue the celebrations at
+            the After party!
+          </paragraph>
+          <paragraph>
+            Nominate projects across five categories; Gamechanger, Breaker of chains, Fun side
+            project of the year, Impactful contributor, Developer Experience.
+          </paragraph>
+        </div>
+      </div>
+
+      <form-button tag="a" href="https://osawards.com/vue/">
+        Nominate a project
+      </form-button>
 
       <heading level="2" variant="block">Our MC</heading>
       <speaker-list columns="1">
@@ -238,6 +263,7 @@
 import FormButton from '~/components/FormButton'
 import Heading from '~/components/Heading'
 import Hero from '~/components/Hero'
+import PageImage from '~/components/PageImage'
 import PageSection from '~/components/PageSection'
 import Paragraph from '~/components/Paragraph'
 import Speaker from '~/components/Speaker'
@@ -251,6 +277,7 @@ export default {
     FormButton,
     Heading,
     Hero,
+    PageImage,
     PageSection,
     Paragraph,
     Speaker,
@@ -269,5 +296,24 @@ export default {
 <style lang="postcss" scoped>
 .p__icons {
   margin-top: var(--grid-six);
+}
+
+.p__osawards {
+  display: grid;
+  grid-gap: var(--grid-two) var(--grid-four);
+
+  @media (--tablet-small) {
+    align-items: center;
+    grid-template-columns: 40% 1fr;
+  }
+
+  @media (--tablet-large) {
+    align-items: center;
+    grid-template-columns: 45% 1fr;
+  }
+}
+
+.p__osawards-image {
+  margin: 0;
 }
 </style>

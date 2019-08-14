@@ -34,17 +34,16 @@ export default {
       { to: '/guide', text: 'Guide' },
       { to: '/diversity', text: 'Diversity' },
       {
+        href: 'https://osawards.com/vue/',
+        rel: 'noopener',
+        target: '_blank',
+        text: 'OS Awards',
+      },
+      {
         href: 'https://www.meetup.com/vuejs-london/',
         rel: 'noopener',
         target: '_blank',
         text: 'Meetup',
-      },
-      {
-        href:
-          'https://join.slack.com/t/vuejsconferences/shared_invite/enQtMzY5Njg2NjA2NTAxLTU4NTA5YTViMGJiYmNhZTRmYTE2YzEwNDdhYjA2ZDJiYjE4OTZlYjcwYzFkZDkyNGNmYTU2NDczNGVhYzFiOWU',
-        target: '_blank',
-        rel: 'noopener',
-        text: 'Slack',
       },
       { to: '/2018', text: '2018' },
     ]
@@ -84,6 +83,12 @@ export default {
       { to: '/why', text: 'Why' },
       { to: '/guide', text: 'Guide' },
       { to: '/diversity', text: 'Diversity' },
+      {
+        href: 'https://osawards.com/vue/',
+        rel: 'noopener',
+        target: '_blank',
+        text: 'OS Awards',
+      },
       { to: '/code-of-conduct', text: 'Code of Conduct' },
       { to: '/terms-and-conditions', text: 'Terms and Conditions' },
       { to: '/privacy-policy', text: 'Privacy Policy' },
