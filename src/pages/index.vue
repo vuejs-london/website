@@ -111,7 +111,16 @@
             solving them like Webpack Bundle Analyzer or Bundlephobia.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Scripting in style, what's your Vue?">
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/MayaShavin',
+            github: 'https://github.com/mayashavin',
+          }"
+          image="/img/speakers/maya-shavin.png"
+          name="Maya Shavin"
+          title="Senior Frontend Developer at Cloudinary"
+          topic="Scripting in style, what's your Vue?"
+        >
           <paragraph>
             Built-in CSS Modules and Scoped CSS support eases the process of styling your Vue. But a
             separate &lt;style&gt; tag is still needed. What about styling directly and dynamically
