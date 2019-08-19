@@ -204,7 +204,16 @@
             about what has changed in the new Router and all the improvements we are bringing.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Types in Vue">
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/octref',
+            github: 'https://github.com/octref',
+          }"
+          image="/img/speakers/pine-wu.jpg"
+          name="Pine Wu"
+          title="Engineers working on Visual Studio Code at Microsoft"
+          topic="Types in Vue"
+        >
           <paragraph>
             TypeScript offers a lot of benefits over JavaScript such as type safety and better
             auto-completion in editors, but these benefits do not directly trickle down to Vue. In
@@ -253,8 +262,9 @@
       <form-button
         tag="a"
         href="https://drive.google.com/file/d/1YYHlMjzAkrqSJwdGN_vSg9L4Y1hi17D1/view"
-        >Sponsor Brochure</form-button
       >
+        Sponsor Brochure
+      </form-button>
     </page-section>
   </main>
 </template>
