@@ -122,9 +122,13 @@
             </paragraph>
           </schedule-event>
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/octref',
+              github: 'https://github.com/octref',
+            }"
+            image="/img/speakers/pine-wu.jpg"
             title="Types in Vue"
-            subtitle="Speaker TBA"
+            subtitle="Pine Wu"
             time="11:30 - 12:00"
             duration="30mins"
           >
