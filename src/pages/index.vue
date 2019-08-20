@@ -147,7 +147,16 @@
             can use to help increase user engagement and enjoyment.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="The new Function-based component API">
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/linus_borg',
+            github: 'https://github.com/LinusBorg',
+          }"
+          image="/img/speakers/thorsten-luenborg.jpg"
+          name="Thorsten Luenborg"
+          title="Vue.js Core team member"
+          topic="The new Composition API"
+        >
           <paragraph>
             Vue 3 and a Vue 2 plugin will offer new ways of encapsulating reusable chunks of code
             that offer a lot of advantages over patterns/features like mixins, Wrapper Components or
@@ -157,22 +166,19 @@
           <paragraph>
             In this talk, we will talk about the history of these "other" features, their use cases
             and their use cases and weaknesses, and finally, show how you can solve these use cases
-            that the Functional Component Composition API provides, and how that's better in a lot
-            of ways: more elegant, more composable, less scattered.
+            that the Composition API provides, and how that's better in a lot of ways: more elegant,
+            more composable, less scattered.
           </paragraph>
         </speaker>
-        <speaker
-          image="/img/logo-120.png"
-          topic="Live coding: The new Function-based component API"
-        >
+        <speaker image="/img/logo-120.png" topic="Live coding: The new Composition API">
           <paragraph>
-            Extending the talk `The new Function-base component API`, we will do a full live coding
-            session to explain the details that the new API offers, coding and building real life
-            examples to expand the horizons for your applications.
+            Extending the talk `The new Composition API`, we will do a full live coding session to
+            explain the details that the new API offers, coding and building real life examples to
+            expand the horizons for your applications.
           </paragraph>
           <paragraph>
             With this live coding session we aim to discover the benefits and details of the new
-            Function-based component API, and have a little laugh along the way.
+            composition API, and have a little laugh along the way.
           </paragraph>
         </speaker>
         <speaker
