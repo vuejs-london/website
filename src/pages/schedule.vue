@@ -49,9 +49,13 @@
             </paragraph>
           </schedule-event>
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/MayaShavin',
+              github: 'https://github.com/mayashavin',
+            }"
+            image="/img/speakers/maya-shavin.jpg"
             title="Scripting in style, what's your Vue?"
-            subtitle="Speaker TBA"
+            subtitle="Maya Shavin"
             time="09:30 - 10:00"
             duration="30mins"
           >
