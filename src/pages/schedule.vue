@@ -218,10 +218,14 @@
             duration="45mins"
           />
           <schedule-event
-            image="/img/logo-120.png"
-            title="The new Function-based component API"
-            subtitle="Speaker TBA"
-            time="16:30 - 17:00"
+            :social="{
+              twitter: 'https://twitter.com/linus_borg',
+              github: 'https://github.com/LinusBorg',
+            }"
+            image="/img/speakers/thorsten-luenborg.jpg"
+            title="The new Composition API"
+            subtitle="Thorsten Luenborg"
+            time="15:15 - 15:45"
             duration="30mins"
           >
             <paragraph>
@@ -233,25 +237,25 @@
             <paragraph>
               In this talk, we will talk about the history of these "other" features, their use
               cases and their use cases and weaknesses, and finally, show how you can solve these
-              use cases that the Functional Component Composition API provides, and how that's
-              better in a lot of ways: more elegant, more composable, less scattered.
+              use cases that the Composition API provides, and how that's better in a lot of ways:
+              more elegant, more composable, less scattered.
             </paragraph>
           </schedule-event>
           <schedule-event
             image="/img/logo-120.png"
-            title="Live coding: The new Function-based component API"
+            title="Live coding: The new Composition API"
             subtitle="Speaker TBA"
             time="17:00 - 17:30"
             duration="30mins"
           >
             <paragraph>
-              Extending the talk `The new Function-base component API`, we will do a full live
-              coding session to explain the details that the new API offers, coding and building
-              real life examples to expand the horizons for your applications.
+              Extending the talk `The new Composition API`, we will do a full live coding session to
+              explain the details that the new API offers, coding and building real life examples to
+              expand the horizons for your applications.
             </paragraph>
             <paragraph>
               With this live coding session we aim to discover the benefits and details of the new
-              Function-based component API, and have a little laugh along the way.
+              Composition API, and have a little laugh along the way.
             </paragraph>
           </schedule-event>
           <schedule-event
