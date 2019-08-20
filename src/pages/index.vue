@@ -170,7 +170,16 @@
             more composable, less scattered.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Live coding: The new Composition API">
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/ycmjason',
+            github: 'https://github.com/ycmjason',
+          }"
+          image="/img/speakers/jason-yu.jpg"
+          name="Jason Yu"
+          title="Frontend Engineer at Attest"
+          topic="Live coding: The new Composition API"
+        >
           <paragraph>
             Extending the talk `The new Composition API`, we will do a full live coding session to
             explain the details that the new API offers, coding and building real life examples to
@@ -178,7 +187,7 @@
           </paragraph>
           <paragraph>
             With this live coding session we aim to discover the benefits and details of the new
-            composition API, and have a little laugh along the way.
+            Composition API, and have a little laugh along the way.
           </paragraph>
         </speaker>
         <speaker
