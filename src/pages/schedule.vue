@@ -242,9 +242,13 @@
             </paragraph>
           </schedule-event>
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/ycmjason',
+              github: 'https://github.com/ycmjason',
+            }"
+            image="/img/speakers/jason-yu.png"
             title="Live coding: The new Composition API"
-            subtitle="Speaker TBA"
+            subtitle="Jason Yu"
             time="17:00 - 17:30"
             duration="30mins"
           >
