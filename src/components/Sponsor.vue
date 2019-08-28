@@ -30,9 +30,8 @@ export default {
 
 <style lang="postcss">
 .c-sponsor {
-  max-width: 90%;
+  width: 90%;
   box-sizing: border-box;
-  padding: var(--grid-two);
   text-align: center;
 
   &__image {

@@ -259,15 +259,45 @@
       </speaker-list>
 
       <heading level="2" variant="block">Our Sponsors</heading>
-      <sponsor-group columns="1" size="medium">
+      <sponsor-group columns="1" size="huge">
         <template #title>
-          Silver
+          Platinum
+        </template>
+        <sponsor
+          href="http://cloudinary.rocks/cecvl"
+          rel="noopener"
+          image="/img/sponsors/cloudinary.svg"
+          title="Cloudinary"
+        />
+      </sponsor-group>
+
+      <sponsor-group columns="1" size="large">
+        <template #title>
+          Gold
         </template>
         <sponsor
           href="https://www.telerik.com/kendo-ui#vue"
           rel="noopener"
           image="/img/sponsors/progress.png"
           title="Progress"
+        />
+        <sponsor
+          href="https://askattest.com"
+          rel="noopener"
+          image="/img/sponsors/attest.svg"
+          title="Progress"
+        />
+      </sponsor-group>
+
+      <sponsor-group columns="1" size="medium">
+        <template #title>
+          Silver
+        </template>
+        <sponsor
+          href="https://www.cypress.io/"
+          rel="noopener"
+          image="/img/sponsors/cypress.svg"
+          title="Cypress.io"
         />
       </sponsor-group>
 
