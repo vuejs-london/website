@@ -136,7 +136,7 @@
           image="/img/speakers/adam-jahr.jpg"
           name="Adam Jahr"
           title="Instructor at VueMastery"
-          topic="5 animations any Vue app can use"
+          topic="Animations any Vue app can use"
         >
           <paragraph>
             We've heard that animating our web interfaces can improve user experience and even boost

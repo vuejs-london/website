@@ -34,7 +34,7 @@
               github: 'https://github.com/atomjar',
             }"
             image="/img/speakers/adam-jahr.jpg"
-            title="5 animations any Vue app can use"
+            title="Animations any Vue app can use"
             subtitle="Adam Jahr"
             time="09:00 - 09:30"
             duration="30mins"
