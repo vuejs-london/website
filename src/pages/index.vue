@@ -258,6 +258,14 @@
         </speaker>
       </speaker-list>
 
+      <heading level="2" variant="block">Advice Lounge</heading>
+      <paragraph>
+        The Advice Lounge is a relaxed and friendly area to engage with experts, community leaders,
+        speakers and other attendees. Join the Advice Lounge for one-on-one engagments with experts
+        or intiate discussions with the experts, speakers and other attendees.
+      </paragraph>
+      <experts />
+
       <heading level="2" variant="block">Our Sponsors</heading>
       <sponsor-group columns="1" size="huge">
         <template #title>
@@ -324,6 +332,7 @@
 </template>
 
 <script>
+import Experts from '~/components/Experts'
 import FormButton from '~/components/FormButton'
 import Heading from '~/components/Heading'
 import Hero from '~/components/Hero'
@@ -338,6 +347,7 @@ import WhyIcons from '~/components/WhyIcons'
 
 export default {
   components: {
+    Experts,
     FormButton,
     Heading,
     Hero,

@@ -83,6 +83,7 @@ export default {
       { to: '/why', text: 'Why' },
       { to: '/guide', text: 'Guide' },
       { to: '/diversity', text: 'Diversity' },
+      { to: '/advice-lounge', text: 'Advice Lounge' },
       {
         href: 'https://osawards.com/vue/',
         rel: 'noopener',

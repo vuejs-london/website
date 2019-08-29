@@ -43,7 +43,13 @@
       </template>
     </modal>
 
-    <article @click="showDetails" @keyup.enter="showDetails" tabindex="0" class="c-speaker__item">
+    <article
+      @click="showDetails"
+      @keyup.enter="showDetails"
+      :class="{ 'c-speaker__item--disabled': !topic || !name || !title }"
+      tabindex="0"
+      class="c-speaker__item"
+    >
       <div class="c-speaker__aside">
         <img :src="image" :alt="name" class="c-speaker__image" />
         <div class="c-speaker__heading">
@@ -153,9 +159,15 @@ export default {
     cursor: pointer;
     outline-color: var(--color-green);
 
-    &:hover,
-    &:active,
-    &:focus {
+    &--disabled {
+      cursor: default;
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    &:hover:not(&--disabled),
+    &:active:not(&--disabled),
+    &:focus:not(&--disabled) {
       border: 1px solid var(--color-green);
 
       ^^&__social {
