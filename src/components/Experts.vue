@@ -22,13 +22,13 @@
       topic="Accessibility"
     />
 
-    <speaker image="/img/logo-120.png" topic="Coming soon..." />
+    <speaker image="/img/logo-120.png" topic="Coming soon..." tbc />
 
-    <speaker image="/img/logo-120.png" topic="Coming soon..." />
+    <speaker image="/img/logo-120.png" topic="Coming soon..." tbc />
 
-    <speaker image="/img/logo-120.png" topic="Coming soon..." />
+    <speaker image="/img/logo-120.png" topic="Coming soon..." tbc />
 
-    <speaker image="/img/logo-120.png" topic="Coming soon..." />
+    <speaker image="/img/logo-120.png" topic="Coming soon..." tbc />
   </speaker-list>
 </template>
 

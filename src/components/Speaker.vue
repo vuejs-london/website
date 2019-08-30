@@ -46,7 +46,7 @@
     <article
       @click="showDetails"
       @keyup.enter="showDetails"
-      :class="{ 'c-speaker__item--disabled': !topic || !name || !title }"
+      :class="{ 'c-speaker__item--disabled': tbc }"
       tabindex="0"
       class="c-speaker__item"
     >
@@ -121,6 +121,10 @@ export default {
     signup: {
       type: String,
       default: null,
+    },
+    tbc: {
+      type: Boolean,
+      default: false,
     },
   },
 

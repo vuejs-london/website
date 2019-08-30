@@ -251,7 +251,7 @@
             ecosystem of Vue components.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Keynote">
+        <speaker image="/img/logo-120.png" topic="Keynote" tbc>
           <paragraph>
             Description to be confirmed
           </paragraph>
