@@ -323,7 +323,7 @@
 
       <form-button
         tag="a"
-        href="https://drive.google.com/file/d/1YYHlMjzAkrqSJwdGN_vSg9L4Y1hi17D1/view"
+        href="https://drive.google.com/open?id=12loNOzIH56dJPUQXK4vcSzDjGUbcjMNA"
       >
         Sponsor Brochure
       </form-button>
