@@ -4,8 +4,8 @@
       <heading variant="block">Advice Lounge</heading>
       <paragraph>
         The Advice Lounge is a relaxed and friendly area to engage with experts, community leaders,
-        speakers and other attendees. Join the Advice Lounge for one-on-one engagments with experts
-        or intiate discussions with the experts, speakers and other attendees.
+        speakers and other attendees. Join the Advice Lounge for one-on-one engagements with experts
+        or initiate discussions with the experts, speakers and other attendees.
       </paragraph>
 
       <heading level="2" variant="block">Experts</heading>

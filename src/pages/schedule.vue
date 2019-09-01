@@ -173,21 +173,21 @@
             :icon="require('assets/img/icons/lunch.svg')"
             title="Lunch"
             subtitle="Lunch and refreshments"
-            time="12:30 - 13:45"
-            duration="75mins"
+            time="12:30 - 14:00"
+            duration="90mins"
           />
           <schedule-event
             :icon="require('assets/img/icons/bolt.svg')"
             title="Lightning talks"
-            subtitle="8 Lightning talks"
-            time="13:45 - 14:45"
-            duration="60mins"
+            subtitle="4 Lightning talks"
+            time="14:00 - 14:30"
+            duration="30mins"
           />
           <schedule-event
             :icon="require('assets/img/icons/trophy.svg')"
             title="OS Awards"
             subtitle="OSAwards Ceremony"
-            time="14:45 - 15:15"
+            time="14:30 - 15:00"
             duration="30mins"
           />
           <schedule-event
@@ -198,7 +198,7 @@
             image="/img/speakers/gregg.jpg"
             title="Decoding Vue 3"
             subtitle="Gregg Pollack"
-            time="15:15 - 15:45"
+            time="15:00 - 15:30"
             duration="30mins"
           >
             <paragraph>
@@ -214,7 +214,7 @@
             :icon="require('assets/img/icons/coffee.svg')"
             title="Break"
             subtitle="Afternoon break"
-            time="15:45 - 16:30"
+            time="15:30 - 16:15"
             duration="45mins"
           />
           <schedule-event
@@ -225,7 +225,7 @@
             image="/img/speakers/thorsten-luenborg.jpg"
             title="The new Composition API"
             subtitle="Thorsten Luenborg"
-            time="15:15 - 15:45"
+            time="16:15 - 16:45"
             duration="30mins"
           >
             <paragraph>
@@ -249,7 +249,7 @@
             image="/img/speakers/jason-yu.png"
             title="Live coding: The new Composition API"
             subtitle="Jason Yu"
-            time="17:00 - 17:30"
+            time="16:45 - 17:15"
             duration="30mins"
           >
             <paragraph>
@@ -266,8 +266,8 @@
             image="/img/logo-120.png"
             title="Keynote"
             subtitle="Speaker TBA"
-            time="17:30 - 18:10"
-            duration="40mins"
+            time="17:15 - 18:00"
+            duration="45mins"
           >
             <paragraph>
               Description to be confirmed
@@ -277,7 +277,7 @@
             :icon="require('assets/img/icons/close.svg')"
             title="Closing"
             subtitle="Closing remarks from the Organizers"
-            time="18:10 - 18:20"
+            time="18:00 - 18:10"
             duration="10mins"
           />
           <schedule-event
@@ -322,7 +322,7 @@
           <schedule-event
             :icon="require('assets/img/icons/laptop.svg')"
             title="Workshops"
-            subtitle="Workshop sessions "
+            subtitle="Workshop sessions"
             time="10:45 - 12:45"
             duration="120mins"
           />
