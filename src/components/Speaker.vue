@@ -6,9 +6,16 @@
           <speaker-social v-bind="social" class="c-speaker__social" />
           <div v-if="time" class="c-speaker__time">{{ time }}</div>
           <div class="c-speaker__aside">
-            <img v-if="name && title" :src="image" :alt="name" class="c-speaker__image" />
+            <div class="c-speaker__images">
+              <img
+                v-for="(src, index) in images"
+                :src="src"
+                :alt="names[index]"
+                class="c-speaker__image"
+              />
+            </div>
             <div class="c-speaker__heading">
-              <heading level="4" tag="div" variant="style-only">{{ name }}</heading>
+              <heading level="4" tag="div" variant="style-only">{{ namesCombined }}</heading>
               <heading level="5" tag="div" variant="style-only">{{ title }}</heading>
             </div>
           </div>
@@ -44,17 +51,26 @@
     </modal>
 
     <article
-      @click="showDetails"
-      @keyup.enter="showDetails"
-      :class="{ 'c-speaker__item--disabled': tbc }"
+      @click="!noAction && showDetails"
+      @keyup.enter="!noAction && showDetails"
+      :class="{ 'c-speaker__item--disabled': noAction }"
       tabindex="0"
       class="c-speaker__item"
     >
       <div class="c-speaker__aside">
-        <img :src="image" :alt="name" class="c-speaker__image" />
+        <div class="c-speaker__images">
+          <img
+            v-for="(src, index) in images"
+            :src="src"
+            :alt="names[index]"
+            class="c-speaker__image"
+          />
+        </div>
         <div class="c-speaker__heading">
           <heading level="5" tag="div" variant="style-only">{{ topic }}</heading>
-          <heading level="6" tag="div" variant="style-only" color="light">{{ name }}</heading>
+          <heading level="6" tag="div" variant="style-only" color="light">{{
+            namesCombined
+          }}</heading>
         </div>
         <speaker-social v-bind="social" class="c-speaker__social" />
         <div v-if="time" class="c-speaker__time">{{ time }}</div>
@@ -91,11 +107,11 @@ export default {
 
   props: {
     name: {
-      type: String,
+      type: [String, Array],
       default: null,
     },
     image: {
-      type: String,
+      type: [String, Array],
       required: true,
     },
     title: {
@@ -122,7 +138,7 @@ export default {
       type: String,
       default: null,
     },
-    tbc: {
+    noAction: {
       type: Boolean,
       default: false,
     },
@@ -132,6 +148,19 @@ export default {
     return {
       modalVisible: false,
     }
+  },
+
+  computed: {
+    images() {
+      return Array.isArray(this.image) ? this.image : [this.image]
+    },
+    names() {
+      return Array.isArray(this.name) ? this.name : [this.name]
+    },
+
+    namesCombined() {
+      return this.names.join(' & ')
+    },
   },
 
   methods: {
@@ -165,15 +194,17 @@ export default {
 
     &--disabled {
       cursor: default;
-      pointer-events: none;
-      touch-action: none;
     }
 
     &:hover:not(&--disabled),
     &:active:not(&--disabled),
     &:focus:not(&--disabled) {
       border: 1px solid var(--color-green);
+    }
 
+    &:hover,
+    &:active,
+    &:focus {
       ^^&__social {
         opacity: 1;
         transform: translateY(0);
@@ -215,13 +246,35 @@ export default {
     padding: var(--grid-four) 0 var(--grid-two);
   }
 
-  &__image {
+  &__images {
+    display: grid;
     width: calc(var(--grid-one) * 13);
     height: calc(var(--grid-one) * 13);
     flex: 0 0 auto;
+    grid-gap: var(--grid-half);
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr max-content;
+  }
+
+  &__image {
+    width: var(--grid-eight);
+    height: var(--grid-eight);
+    box-sizing: border-box;
     border: 2px solid var(--color-green);
     border-radius: var(--grid-half);
     box-shadow: var(--c-speaker-item-shadow);
+  }
+
+  &__image:only-child {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image:not(:only-child):last-child {
+    margin-top: calc(-1 * var(--grid-four));
+    margin-left: calc(-1 * var(--grid-five));
+    grid-column: 2;
+    grid-row: 2;
   }
 
   &__heading {

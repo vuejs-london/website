@@ -4,7 +4,10 @@
       30+ Experts
     </icon-block>
     <icon-block :src="require('~/assets/img/icons/podium.svg')">
-      16+ Talks
+      14 Talks
+    </icon-block>
+    <icon-block :src="require('~/assets/img/icons/trophy.svg')">
+      Awards Ceremony
     </icon-block>
     <icon-block :src="require('~/assets/img/icons/bolt.svg')">
       Lightning talks
@@ -17,9 +20,6 @@
     </icon-block>
     <icon-block :src="require('~/assets/img/icons/shirt.svg')">
       Conference t-shirt
-    </icon-block>
-    <icon-block :src="require('~/assets/img/icons/goodies.svg')">
-      Conference Goodies
     </icon-block>
     <icon-block :src="require('~/assets/img/icons/breakfast.svg')">
       Free Breakfast

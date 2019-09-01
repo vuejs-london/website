@@ -195,7 +195,7 @@
             twitter: 'https://twitter.com/greggpollack',
             github: 'https://github.com/gregg',
           }"
-          image="/img/speakers/gregg.jpg"
+          image="/img/speakers/gregg-pollack.jpg"
           name="Gregg Pollack"
           title="Teacher of Vue.js at Vue Mastery"
           topic="Decoding Vue 3"
@@ -251,18 +251,21 @@
             ecosystem of Vue components.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Keynote" tbc>
+        <speaker image="/img/logo-120.png" topic="Keynote" no-action>
           <paragraph>
             Description to be confirmed
           </paragraph>
         </speaker>
       </speaker-list>
 
+      <heading level="2" variant="block">Workshops</heading>
+      <workshops />
+
       <heading level="2" variant="block">Advice Lounge</heading>
       <paragraph>
         The Advice Lounge is a relaxed and friendly area to engage with experts, community leaders,
-        speakers and other attendees. Join the Advice Lounge for one-on-one engagments with experts
-        or intiate discussions with the experts, speakers and other attendees.
+        speakers and other attendees. Join the Advice Lounge for one-on-one engagements with experts
+        or initiate discussions with the experts, speakers and other attendees.
       </paragraph>
       <experts />
 
@@ -279,7 +282,7 @@
         />
       </sponsor-group>
 
-      <sponsor-group columns="1" size="large">
+      <sponsor-group columns="1" sizevue="large">
         <template #title>
           Gold
         </template>
@@ -344,6 +347,7 @@ import SpeakerList from '~/components/SpeakerList'
 import Sponsor from '~/components/Sponsor'
 import SponsorGroup from '~/components/SponsorGroup'
 import WhyIcons from '~/components/WhyIcons'
+import Workshops from '~/components/Workshops'
 
 export default {
   components: {
@@ -359,6 +363,7 @@ export default {
     Sponsor,
     SponsorGroup,
     WhyIcons,
+    Workshops,
   },
 
   head: {
