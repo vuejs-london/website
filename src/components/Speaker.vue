@@ -51,8 +51,8 @@
     </modal>
 
     <article
-      @click="!noAction && showDetails"
-      @keyup.enter="!noAction && showDetails"
+      @click="!noAction && showDetails()"
+      @keyup.enter="!noAction && showDetails()"
       :class="{ 'c-speaker__item--disabled': noAction }"
       tabindex="0"
       class="c-speaker__item"
