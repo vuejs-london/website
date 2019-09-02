@@ -24,6 +24,17 @@
     />
     <speaker
       :social="{
+        github: 'https://github.com/tzhelyazkova',
+        twitter: 'https://twitter.com/tonina_zh',
+      }"
+      image="/img/speakers/tonina-zhelyazkova.jpg"
+      name="Tonina Zhelyazkova"
+      topic="JS, Vue, Vuex, Unit Testing"
+      title="Full Stack Developer"
+      no-action
+    />
+    <speaker
+      :social="{
         github: 'https://github.com/lucamezzalira',
         twitter: 'https://twitter.com/lucamezzalira',
       }"
@@ -44,7 +55,6 @@
       title="Vue.js Core Team"
       no-action
     />
-    <speaker image="/img/logo-120.png" topic="Coming soon..." no-action />
     <speaker image="/img/logo-120.png" topic="Coming soon..." no-action />
   </speaker-list>
 </template>
