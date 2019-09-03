@@ -246,7 +246,7 @@
               twitter: 'https://twitter.com/ycmjason',
               github: 'https://github.com/ycmjason',
             }"
-            image="/img/speakers/jason-yu.png"
+            image="/img/speakers/jason-yu.jpg"
             title="Live coding: The new Composition API"
             subtitle="Jason Yu"
             time="16:45 - 17:15"
