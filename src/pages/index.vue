@@ -198,15 +198,31 @@
           image="/img/speakers/gregg-pollack.jpg"
           name="Gregg Pollack"
           title="Teacher of Vue.js at Vue Mastery"
-          topic="Decoding Vue 3"
+          topic="Vue 3’s Composition API Explained Visually"
         >
           <paragraph>
-            Some of the biggest changes in Vue 3 aren't the easiest to understand. I will explain
-            some of the complex features of Vue 3 visually with animation.
+            The most powerful new feature of Vue 3 is the composition API, which provides an
+            alternative syntax for writing components. In this talk, Gregg Pollack will introduce
+            why this new API is needed, how it improves upon what is currently possible in Vue, and
+            the basics of its syntax.
           </paragraph>
           <paragraph>
-            Consider this a guided tour of advanced concepts to grasp in order to start using Vue in
-            new and even more powerful ways.
+            Bigger Vue applications often run into two major problems.
+          </paragraph>
+          <list>
+            <list-item>
+              1. Component .vue files become too large and difficult to read.
+            </list-item>
+            <list-item>
+              2. There are disadvantages to the patterns Vue 2 provides to reuse code across
+              multiple components.
+            </list-item>
+          </list>
+          <paragraph>
+            In this talk, we will dive deeper into how these problems tend to show up, and then
+            explain how the Vue 3 Composition API aims to solve them. We then begin to understand
+            the new syntax and how to use it to build components that are more maintainable and
+            scalable.
           </paragraph>
         </speaker>
         <speaker
