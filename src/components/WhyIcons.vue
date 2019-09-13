@@ -22,16 +22,16 @@
       Conference t-shirt
     </icon-block>
     <icon-block :src="require('~/assets/img/icons/breakfast.svg')">
-      Free Breakfast
-    </icon-block>
-    <icon-block :src="require('~/assets/img/icons/lunch.svg')">
-      Free Lunch
+      Free Breakfast + Lunch
     </icon-block>
     <icon-block :src="require('~/assets/img/icons/coffee.svg')">
       Free Snacks + Drinks
     </icon-block>
     <icon-block :src="require('~/assets/img/icons/seating.svg')">
       Premium Seating
+    </icon-block>
+    <icon-block :src="require('~/assets/img/icons/kirby.svg')">
+      Cinema Screen Gaming
     </icon-block>
     <icon-block :src="require('~/assets/img/icons/O2.svg')">
       Iconic Venue
