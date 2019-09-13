@@ -354,6 +354,18 @@
         />
       </sponsor-group>
 
+      <sponsor-group columns="1" size="small">
+        <template #title>
+          Sticker
+        </template>
+        <sponsor
+          href="https://mule.to/VuejsLondon"
+          rel="noopener"
+          image="/img/sponsors/stickermule.svg"
+          title="Sticker Mule"
+        />
+      </sponsor-group>
+
       <form-button
         tag="a"
         href="https://drive.google.com/open?id=12loNOzIH56dJPUQXK4vcSzDjGUbcjMNA"
