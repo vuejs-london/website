@@ -279,14 +279,22 @@
             </paragraph>
           </schedule-event>
           <schedule-event
-            image="/img/logo-120.png"
+            :social="{
+              twitter: 'https://twitter.com/youyuxi',
+              github: 'https://github.com/yyx990803',
+            }"
+            image="/img/speakers/evan-you.jpg"
             title="Keynote"
-            subtitle="Speaker TBA"
+            subtitle="Evan You"
             time="17:15 - 18:00"
             duration="45mins"
           >
             <paragraph>
-              Description to be confirmed
+              Evan will be once again doing a remote talk - get the inside information on the
+              progress of Vue.js 3 and more.
+            </paragraph>
+            <paragraph>
+              Further details to be confirmed shortly.
             </paragraph>
           </schedule-event>
           <schedule-event

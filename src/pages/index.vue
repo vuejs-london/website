@@ -267,9 +267,23 @@
             ecosystem of Vue components.
           </paragraph>
         </speaker>
-        <speaker image="/img/logo-120.png" topic="Keynote" no-action>
+        <speaker
+          :social="{
+            twitter: 'https://twitter.com/youyuxi',
+            github: 'https://github.com/yyx990803',
+          }"
+          image="/img/speakers/evan-you.jpg"
+          name="Evan You"
+          title="Author of Vue"
+          topic="Keynote"
+          remote
+        >
           <paragraph>
-            Description to be confirmed
+            Evan will be once again doing a remote talk - get the inside information on the progress
+            of Vue.js 3 and more.
+          </paragraph>
+          <paragraph>
+            Further details to be confirmed shortly.
           </paragraph>
         </speaker>
       </speaker-list>
