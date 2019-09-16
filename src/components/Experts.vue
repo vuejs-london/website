@@ -55,7 +55,17 @@
       title="Vue.js Core Team"
       no-action
     />
-    <speaker image="/img/logo-120.png" topic="Coming soon..." no-action />
+    <speaker
+      :social="{
+        github: 'https://github.com/marialamardo',
+        twitter: 'https://twitter.com/marialamardo',
+      }"
+      image="/img/speakers/maria-lamardo.jpg"
+      name="Maria Lamardo"
+      topic="Accessibility"
+      title="Front End Engineer at Pendo"
+      no-action
+    />
   </speaker-list>
 </template>
 
