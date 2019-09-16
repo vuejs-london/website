@@ -342,6 +342,18 @@
         />
       </sponsor-group>
 
+      <sponsor-group columns="1" size="medium">
+        <template #title>
+          After Party
+        </template>
+        <sponsor
+          href="https://www.storyblok.com"
+          rel="noopener"
+          image="/img/sponsors/storyblok.svg"
+          title="Storyblok"
+        />
+      </sponsor-group>
+
       <sponsor-group columns="1">
         <template #title>
           Video
@@ -351,6 +363,19 @@
           rel="noopener"
           image="/img/sponsors/vuemastery.svg"
           title="VueMastery"
+        />
+      </sponsor-group>
+
+      <sponsor-group columns="1" size="small">
+        <template #title>
+          Snack
+        </template>
+        <sponsor
+          href="https://www.level5.co.uk/"
+          class="p-sponsor__level5"
+          rel="noopener"
+          image="/img/sponsors/level5.svg"
+          title="Storyblok"
         />
       </sponsor-group>
 
@@ -417,6 +442,14 @@ export default {
 <style lang="postcss" scoped>
 .p__icons {
   margin-top: var(--grid-six);
+}
+
+.p-sponsor__level5 {
+  max-width: 80%;
+
+  @media (--tablet-small) {
+    max-width: 70%;
+  }
 }
 
 .p__osawards {
