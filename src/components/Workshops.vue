@@ -281,7 +281,8 @@
       >
         <paragraph>
           Join Boston Vue.js Co-Organizer Kristin Ruben and Raleigh-Durham Chapter Leader Maria
-          Lamardo for a fun mobile-focused Vue.js workshop!
+          Lamardo for a fun Vue.js workshop on code reuse, from mixins to the new Vue 3.0 functions
+          API!
         </paragraph>
         <paragraph>
           This event is free and open to anyone who identify as a woman and wants to learn about
