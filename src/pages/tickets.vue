@@ -58,12 +58,6 @@
       />
       <ticket
         image="/img/logo-120.png"
-        name="Fundamentals of Vue"
-        time="09:00 - 17:00"
-        href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
-      />
-      <ticket
-        image="/img/logo-120.png"
         name="In-depth Application Testing with Vue"
         href="https://www.universe.com/events/vue-js-london-2019-workshops-tickets-london-ZGMY90"
       />

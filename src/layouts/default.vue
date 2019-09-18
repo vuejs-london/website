@@ -1,18 +1,21 @@
 <template>
   <div>
     <navbar :links="navbarLinks"></navbar>
-    <nuxt></nuxt>
+    <banner class="p__banner">Hurry! More than 80% of tickets are sold out!</banner>
+    <nuxt class="p__content"></nuxt>
     <footer-section :links="footerLinks"></footer-section>
     <cookies />
   </div>
 </template>
 
 <script>
+import Banner from '~/components/Banner'
 import FooterSection from '~/components/Footer'
 import Navbar from '~/components/Navbar'
 
 export default {
   components: {
+    Banner,
     Cookies: () => import('~/components/Cookies'),
     Navbar,
     FooterSection,
@@ -97,3 +100,14 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss" scoped>
+.p__banner {
+  position: fixed;
+  z-index: var(--z-index-navbar);
+}
+
+.p__content {
+  padding-top: var(--grid-ten);
+}
+</style>
