@@ -354,6 +354,18 @@
         />
       </sponsor-group>
 
+      <sponsor-group columns="1" size="small">
+        <template #title>
+          Diversity
+        </template>
+        <sponsor
+          href="https://samknows.com"
+          rel="noopener"
+          image="/img/sponsors/samknows.svg"
+          title="Sam Knows"
+        />
+      </sponsor-group>
+
       <sponsor-group columns="1">
         <template #title>
           Video

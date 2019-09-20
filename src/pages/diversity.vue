@@ -34,18 +34,17 @@
         >Apply now!</form-button
       >
 
-      <heading level="2" variant="block">Sponsors</heading>
-      <paragraph>
-        Diversity sponsorship is now open. Please help us improve diversity at Vue.js London 2019
-        and future events.
-      </paragraph>
-      <paragraph>
-        Please get in contact with us through email,
-        <i>
-          <strong>sponsors@vuejs.london</strong>
-        </i>
-      </paragraph>
-      <form-button tag="a" href="mailto:sponsors@vuejs.london">Become a sponsor</form-button>
+      <sponsor-group columns="1" size="large">
+        <template #title>
+          Sponsors
+        </template>
+        <sponsor
+          href="https://samknows.com"
+          rel="noopener"
+          image="/img/sponsors/samknows.svg"
+          title="Sam Knows"
+        />
+      </sponsor-group>
     </page-section>
   </main>
 </template>
@@ -55,6 +54,8 @@ import FormButton from '~/components/FormButton.vue'
 import Heading from '~/components/Heading.vue'
 import PageSection from '~/components/PageSection.vue'
 import Paragraph from '~/components/Paragraph.vue'
+import Sponsor from '~/components/Sponsor.vue'
+import SponsorGroup from '~/components/SponsorGroup.vue'
 
 export default {
   head: {
@@ -66,6 +67,8 @@ export default {
     Heading,
     PageSection,
     Paragraph,
+    Sponsor,
+    SponsorGroup,
   },
 }
 </script>
