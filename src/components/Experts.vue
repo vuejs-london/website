@@ -66,6 +66,18 @@
       title="Front End Engineer at Pendo"
       no-action
     />
+    <speaker
+      :social="{
+        github: 'https://github.com/filipalacerda',
+        gitlab: 'https://gitlab.com/filipa',
+        twitter: 'https://twitter.com/FilipaLacerda',
+      }"
+      image="/img/speakers/filipa-lacerda.jpg"
+      name="Filipa Lacerda"
+      topic="Vue, Vuex and Code Refactoring"
+      title="Front End Engineer at Pendo"
+      no-action
+    />
   </speaker-list>
 </template>
 
