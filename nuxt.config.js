@@ -76,18 +76,12 @@ export default {
     ],
   },
 
-  plugins: ['~plugins/drift.client.js'],
-
-  modules: [
-    '@nuxtjs/pwa',
-    '@nuxtjs/onesignal',
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-105239974-1',
-      },
-    ],
+  plugins: [
+    { src: '~plugins/drift.client.js', mode: 'client' },
+    { src: '~plugins/ga.js', mode: 'client' },
   ],
+
+  modules: ['@nuxtjs/pwa', '@nuxtjs/onesignal'],
 
   oneSignal: {
     cdn: true,
