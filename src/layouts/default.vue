@@ -1,7 +1,7 @@
 <template>
   <div>
     <navbar :links="navbarLinks"></navbar>
-    <banner class="p__banner">Hurry! More than 80% of tickets are sold out!</banner>
+    <banner class="p__banner">Hurry! More than 95% of tickets are sold out!</banner>
     <nuxt class="p__content"></nuxt>
     <footer-section :links="footerLinks"></footer-section>
     <cookies />
