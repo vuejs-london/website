@@ -86,7 +86,7 @@
           target="_blank"
           href="https://www.google.com/maps/search/restaurants+at+the+o2/@51.5023672,-0.0015686,16z/data=!3m1!4b1"
         >
-          Find a Resturant
+          Find a Restaurant
         </form-button>
       </div>
 
