@@ -127,37 +127,13 @@
           </schedule-event>
           <schedule-event
             :social="{
-              twitter: 'https://twitter.com/octref',
-              github: 'https://github.com/octref',
-            }"
-            image="/img/speakers/pine-wu.jpg"
-            title="Types in Vue"
-            subtitle="Pine Wu"
-            time="11:30 - 12:00"
-            duration="30mins"
-          >
-            <paragraph>
-              TypeScript offers a lot of benefits over JavaScript such as type safety and better
-              auto-completion in editors, but these benefits do not directly trickle down to Vue. In
-              this talk, I trace through improvements in the Vue Language Server that enables type
-              safety of Vue Single File Components, and what that entails for writing type-safe Vue
-              code.
-            </paragraph>
-            <paragraph>
-              I will talk about innovations in Vue Language Server that could improve Vue
-              developer's productivity. Finally, we will examine how we can leverage types to build
-              a better ecosystem of Vue components.
-            </paragraph>
-          </schedule-event>
-          <schedule-event
-            :social="{
               twitter: 'https://twitter.com/posva',
               github: 'https://github.com/posva',
             }"
             image="/img/speakers/eduardo-san-martin-morote.jpg"
             title="A new Router to guide your Apps"
             subtitle="Eduardo San Martin Morote"
-            time="12:00 - 12:30"
+            time="11:30 - 12:00"
             duration="30mins"
           >
             <paragraph>
@@ -169,6 +145,13 @@
               about what has changed in the new Router and all the improvements we are bringing.
             </paragraph>
           </schedule-event>
+          <schedule-event
+            :icon="require('assets/img/icons/trophy.svg')"
+            title="OS Awards"
+            subtitle="OSAwards Ceremony"
+            time="12:00 - 12:30"
+            duration="30mins"
+          />
           <schedule-event
             :icon="require('assets/img/icons/lunch.svg')"
             title="Lunch"
@@ -183,13 +166,7 @@
             time="14:00 - 14:30"
             duration="30mins"
           />
-          <schedule-event
-            :icon="require('assets/img/icons/trophy.svg')"
-            title="OS Awards"
-            subtitle="OSAwards Ceremony"
-            time="14:30 - 15:00"
-            duration="30mins"
-          />
+
           <schedule-event
             :social="{
               twitter: 'https://twitter.com/greggpollack',
@@ -198,7 +175,7 @@
             image="/img/speakers/gregg.jpg"
             title="Vue 3’s Composition API Explained Visually"
             subtitle="Gregg Pollack"
-            time="15:00 - 15:30"
+            time="14:30 - 15:00"
             duration="30mins"
           >
             <paragraph>
@@ -227,13 +204,6 @@
             </paragraph>
           </schedule-event>
           <schedule-event
-            :icon="require('assets/img/icons/coffee.svg')"
-            title="Break"
-            subtitle="Afternoon break"
-            time="15:30 - 16:15"
-            duration="45mins"
-          />
-          <schedule-event
             :social="{
               twitter: 'https://twitter.com/linus_borg',
               github: 'https://github.com/LinusBorg',
@@ -241,7 +211,7 @@
             image="/img/speakers/thorsten-luenborg.jpg"
             title="The new Composition API"
             subtitle="Thorsten Luenborg"
-            time="16:15 - 16:45"
+            time="15:00 - 15:30"
             duration="30mins"
           >
             <paragraph>
@@ -258,6 +228,13 @@
             </paragraph>
           </schedule-event>
           <schedule-event
+            :icon="require('assets/img/icons/coffee.svg')"
+            title="Break"
+            subtitle="Afternoon break"
+            time="15:30 - 16:15"
+            duration="45mins"
+          />
+          <schedule-event
             :social="{
               twitter: 'https://twitter.com/ycmjason',
               github: 'https://github.com/ycmjason',
@@ -265,8 +242,8 @@
             image="/img/speakers/jason-yu.jpg"
             title="Live coding: The new Composition API"
             subtitle="Jason Yu"
-            time="16:45 - 17:15"
-            duration="30mins"
+            time="16:15 - 17:00"
+            duration="45mins"
           >
             <paragraph>
               Extending the talk `The new Composition API`, we will do a full live coding session to
@@ -286,7 +263,7 @@
             image="/img/speakers/evan-you.jpg"
             title="Keynote"
             subtitle="Evan You"
-            time="17:15 - 18:00"
+            time="17:00 - 17:45"
             duration="45mins"
           >
             <paragraph>
@@ -301,8 +278,8 @@
             :icon="require('assets/img/icons/close.svg')"
             title="Closing"
             subtitle="Closing remarks from the Organizers"
-            time="18:00 - 18:10"
-            duration="10mins"
+            time="17:45 - 18:00"
+            duration="15mins"
           />
           <schedule-event
             :icon="require('assets/img/icons/party.svg')"
