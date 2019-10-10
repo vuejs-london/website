@@ -1,5 +1,5 @@
 <template>
-  <form-button tag="nuxt-link" to="/tickets" class="c-banner">
+  <form-button tag="nuxt-link" to="/cfp" class="c-banner">
     <div class="c-banner__content">
       <heading level="4" variant="style-only">
         <slot />

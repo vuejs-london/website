@@ -23,6 +23,13 @@
       />
 
       <div ref="tickets" class="tickets"></div>
+
+      <br />
+      <heading level="2">Student &amp; low earning tickets</heading>
+      <paragraph>
+        If you are a student or a low earner or unemployed, you can get an additional discount.
+        Please email team@vuejs.london with proof and we will send you a code to redeem your ticket.
+      </paragraph>
     </page-section>
   </main>
 </template>

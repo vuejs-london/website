@@ -1,21 +1,20 @@
 <template>
   <main>
     <page-section>
-      <heading variant="block">CFP</heading>
+      <heading variant="block">2020 CFP</heading>
       <paragraph>
         CFP (Call for proposals) is an opportunity for everyone to apply to speak at Vue.js London,
         submit a proposal for a lightning/full session talk, MC, or run a full day workshop (8
         Hours).
       </paragraph>
       <paragraph>
-        Anyone is welcome to apply! The prominent theme for this year will be around growth, scale
-        and awareness. We will focus on talks and technologies that will share knowledge on scaling
-        and growing Vue.js Applications to enterprise quality. Vue 3 will be the core focus of all
-        talks, we will work with all accepted speakers to ensure their content is focused for Vue 3.
+        Anyone is welcome to apply! We will focus on talks and technologies that will share
+        knowledge on scaling and growing Vue.js Applications to enterprise quality. Vue 3 will be
+        the core focus of all talks.
       </paragraph>
       <list bullet>
-        <list-item>Deadline is 2nd July 2019</list-item>
-        <list-item>Conference day is 4th October 2019</list-item>
+        <!-- <list-item>Deadline is 2nd July 2020</list-item> -->
+        <list-item>Conference day is likely beginning October 2020</list-item>
         <list-item>Workshop day is 5th October 2019</list-item>
         <list-item>You are welcome to submit as many proposals as you like</list-item>
         <list-item>Accepted CFP's will be notified as soon as possible</list-item>
@@ -25,11 +24,12 @@
       </list>
       <form-button
         tag="a"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdcRF5c8ZbsKAv1jD0CSs4h9IyMr8ySMxjPgGz8tnku8kY6vg/viewform"
+        href="https://docs.google.com/forms/d/1HHwB96tbqM8Du0J2zOz2OU8y5OrBbBrKxh81K_aueBU"
         rel="noopener"
         target="_blank"
-        >Apply now!</form-button
       >
+        Apply now!
+      </form-button>
     </page-section>
   </main>
 </template>

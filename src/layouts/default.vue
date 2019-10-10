@@ -1,7 +1,7 @@
 <template>
   <div>
     <navbar :links="navbarLinks"></navbar>
-    <banner class="p__banner">Hurry! More than 95% of tickets are sold out!</banner>
+    <banner class="p__banner">2020 CFP Open! Apply now!</banner>
     <nuxt class="p__content"></nuxt>
     <footer-section :links="footerLinks"></footer-section>
     <cookies />
@@ -30,12 +30,12 @@ export default {
 
   created() {
     this.navbarLinks = [
-      { to: '/tickets', text: 'Tickets' },
-      { to: '/workshops', text: 'Workshops' },
-      { to: '/schedule', text: 'Schedule' },
+      { to: '/cfp', text: '2020 CFP' },
+      // { to: '/workshops', text: 'Workshops' },
+      // { to: '/schedule', text: 'Schedule' },
       { to: '/why', text: 'Why' },
       { to: '/guide', text: 'Guide' },
-      { to: '/diversity', text: 'Diversity' },
+      // { to: '/diversity', text: 'Diversity' },
       {
         href: 'https://osawards.com/vue/',
         rel: 'noopener',
@@ -80,6 +80,7 @@ export default {
       },
       { to: '/2018', text: '2018' },
 
+      { to: '/cfp', text: '2020 CFP' },
       { to: '/tickets', text: 'Tickets' },
       { to: '/workshops', text: 'Workshops' },
       { to: '/schedule', text: 'Schedule' },
