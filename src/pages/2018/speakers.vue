@@ -290,23 +290,23 @@
 </template>
 
 <script>
-import Heading from '~/components/Heading'
-import PageSection from '~/components/PageSection'
-import Speaker from '~/components/Speaker'
-import SpeakerList from '~/components/SpeakerList'
+  import Heading from '~/components/Heading'
+  import PageSection from '~/components/PageSection'
+  import Speaker from '~/components/Speaker'
+  import SpeakerList from '~/components/SpeakerList'
 
-export default {
-  layout: 'previous/2018',
+  export default {
+    layout: 'previous/2018',
 
-  head: {
-    title: 'Vue.js London 2018 | Speakers',
-  },
+    components: {
+      Heading,
+      PageSection,
+      Speaker,
+      SpeakerList,
+    },
 
-  components: {
-    Heading,
-    PageSection,
-    Speaker,
-    SpeakerList,
-  },
-}
+    head: {
+      title: 'Vue.js London 2018 | Speakers',
+    },
+  }
 </script>

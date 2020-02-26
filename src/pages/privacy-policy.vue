@@ -381,25 +381,24 @@
 </template>
 
 <script>
-import Anchor from '~/components/Anchor'
-import Heading from '~/components/Heading'
-import List from '~/components/List'
-import ListItem from '~/components/ListItem'
-import PageSection from '~/components/PageSection'
-import Paragraph from '~/components/Paragraph'
+  import Anchor from '~/components/Anchor'
+  import Heading from '~/components/Heading'
+  import List from '~/components/List'
+  import ListItem from '~/components/ListItem'
+  import PageSection from '~/components/PageSection'
+  import Paragraph from '~/components/Paragraph'
 
-export default {
-  head: {
-    title: 'Vue.js London 2019 | Privacy Policy',
-  },
-
-  components: {
-    Anchor,
-    Heading,
-    List,
-    ListItem,
-    PageSection,
-    Paragraph,
-  },
-}
+  export default {
+    components: {
+      Anchor,
+      Heading,
+      List,
+      ListItem,
+      PageSection,
+      Paragraph,
+    },
+    head: {
+      title: 'Vue.js London 2019 | Privacy Policy',
+    },
+  }
 </script>

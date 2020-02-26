@@ -5,7 +5,7 @@
 </template>
 
 <style lang="postcss">
-.c-paragraph {
-  margin: var(--grid-one) 0;
-}
+  .c-paragraph {
+    margin: var(--grid-one) 0;
+  }
 </style>

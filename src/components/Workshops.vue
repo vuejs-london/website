@@ -297,26 +297,26 @@
 </template>
 
 <script>
-import List from '~/components/List'
-import ListItem from '~/components/ListItem'
-import Paragraph from '~/components/Paragraph'
-import Speaker from '~/components/Speaker'
-import SpeakerList from '~/components/SpeakerList'
+  import List from '~/components/List'
+  import ListItem from '~/components/ListItem'
+  import Paragraph from '~/components/Paragraph'
+  import Speaker from '~/components/Speaker'
+  import SpeakerList from '~/components/SpeakerList'
 
-export default {
-  components: {
-    List,
-    ListItem,
-    Paragraph,
-    Speaker,
-    SpeakerList,
-  },
+  export default {
+    components: {
+      List,
+      ListItem,
+      Paragraph,
+      Speaker,
+      SpeakerList,
+    },
 
-  mounted() {
-    const element = document.createElement('script')
-    element.src = 'https://www.universe.com/embed2.js'
+    mounted() {
+      const element = document.createElement('script')
+      element.src = 'https://www.universe.com/embed2.js'
 
-    this.$refs.tickets && this.$refs.tickets.append(element)
-  },
-}
+      this.$refs.tickets && this.$refs.tickets.append(element)
+    },
+  }
 </script>

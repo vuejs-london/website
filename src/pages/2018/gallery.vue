@@ -6,11 +6,11 @@
         <page-image
           v-for="(img, imgIndex) in imagesSmall"
           :key="imgIndex"
-          @click="load(imgIndex)"
-          @keydown.enter="load(imgIndex)"
           :src="img"
           alt="Vue.js London Image"
           class="p-image"
+          @click="load(imgIndex)"
+          @keydown.enter="load(imgIndex)"
         />
       </div>
       <no-ssr placeholder="Loading...">
@@ -21,81 +21,81 @@
 </template>
 
 <script>
-import Heading from '~/components/Heading.vue'
-import Lightbox from 'vue-easy-lightbox'
-import PageImage from '~/components/PageImage.vue'
-import PageSection from '~/components/PageSection.vue'
-import Vue from 'vue'
+  import Heading from '~/components/Heading.vue'
+  import Lightbox from 'vue-easy-lightbox'
+  import PageImage from '~/components/PageImage.vue'
+  import PageSection from '~/components/PageSection.vue'
+  import Vue from 'vue'
 
-const images = new Array(473).fill('').map((_, index) => `${index + 1}`.padStart(4, '0'))
+  const images = new Array(473).fill('').map((_, index) => `${index + 1}`.padStart(4, '0'))
 
-const imagesSmall = images.map(value => `/2018/images/gallery/10-percent/${value}.jpg`)
-const imagesFull = images.map(value => `/2018/images/gallery/original/${value}.jpg`)
+  const imagesSmall = images.map(value => `/2018/images/gallery/10-percent/${value}.jpg`)
+  const imagesFull = images.map(value => `/2018/images/gallery/original/${value}.jpg`)
 
-if (process.client) {
-  Vue.use(Lightbox)
-}
+  if (process.client) {
+    Vue.use(Lightbox)
+  }
 
-export default {
-  layout: 'previous/2018',
+  export default {
+    layout: 'previous/2018',
 
-  head: {
-    title: 'Vue.js London 2018 | Gallery',
-  },
-
-  components: {
-    Heading,
-    PageImage,
-    PageSection,
-  },
-
-  data() {
-    return {
-      imagesSmall,
-      imagesFull,
-      visible: false,
-      index: 0,
-    }
-  },
-
-  methods: {
-    load(index) {
-      this.index = index
-      this.visible = true
+    components: {
+      Heading,
+      PageImage,
+      PageSection,
     },
 
-    close() {
-      this.visible = false
+    data() {
+      return {
+        imagesSmall,
+        imagesFull,
+        visible: false,
+        index: 0,
+      }
     },
-  },
-}
+
+    methods: {
+      load(index) {
+        this.index = index
+        this.visible = true
+      },
+
+      close() {
+        this.visible = false
+      },
+    },
+
+    head: {
+      title: 'Vue.js London 2018 | Gallery',
+    },
+  }
 </script>
 
 <style lang="postcss" scoped>
-.p-image-container {
-  display: grid;
-  align-items: stretch;
-  grid-gap: var(--grid-two) var(--grid-two);
+  .p-image-container {
+    display: grid;
+    align-items: stretch;
+    grid-gap: var(--grid-two) var(--grid-two);
 
-  @media (--phablet-medium) {
-    grid-template-columns: repeat(2, 1fr);
+    @media (--phablet-medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (--tablet-medium) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
-  @media (--tablet-medium) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+  .p-image {
+    max-height: 300px;
+    margin-top: 0;
 
-.p-image {
-  max-height: 300px;
-  margin-top: 0;
+    @media (--phablet-medium) {
+      max-height: 240px;
+    }
 
-  @media (--phablet-medium) {
-    max-height: 240px;
+    @media (--tablet-medium) {
+      max-height: 210px;
+    }
   }
-
-  @media (--tablet-medium) {
-    max-height: 210px;
-  }
-}
 </style>

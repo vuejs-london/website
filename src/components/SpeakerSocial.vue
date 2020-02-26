@@ -28,61 +28,61 @@
 </template>
 
 <script>
-import Anchor from '~/components/Anchor'
+  import Anchor from '~/components/Anchor'
 
-export default {
-  components: {
-    Anchor,
-  },
+  export default {
+    components: {
+      Anchor,
+    },
 
-  props: {
-    github: {
-      type: String,
-      default: null,
+    props: {
+      github: {
+        type: String,
+        default: null,
+      },
+      gitlab: {
+        type: String,
+        default: null,
+      },
+      twitter: {
+        type: String,
+        default: null,
+      },
     },
-    gitlab: {
-      type: String,
-      default: null,
-    },
-    twitter: {
-      type: String,
-      default: null,
-    },
-  },
-}
+  }
 </script>
 
 <style lang="postcss">
-.c-speaker-social {
-  &__icon {
-    display: inline-block;
-    box-sizing: border-box;
-    padding: var(--grid-half);
-    margin: 0 var(--grid-quarter);
-    background-repeat: no-repeat;
-    vertical-align: middle;
+  .c-speaker-social {
+    &__icon {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: var(--grid-half);
+      margin: 0 var(--grid-quarter);
+      background-repeat: no-repeat;
+      vertical-align: middle;
 
-    &--twitter {
-      width: 24px;
-      height: 19px;
-      background-image: url(~assets/img/twitter.svg);
-      background-size: 24px 19px;
-    }
+      &--twitter {
+        width: 24px;
+        height: 19px;
+        background-image: url(~assets/img/twitter.svg);
+        background-size: 24px 19px;
+      }
 
-    &--github,
-    &--gitlab {
-      width: 22px;
-      height: 22px;
-      background-size: 22px;
-    }
+      &--github,
+      &--gitlab {
+        width: 22px;
+        height: 22px;
+        background-size: 22px;
+      }
 
-    &--github {
-      background-image: url(~assets/img/github.svg);
-    }
+      &--github {
+        background-image: url(~assets/img/github.svg);
+      }
 
-    &--gitlab {
-      background-image: url(~assets/img/gitlab.svg);
+      &--gitlab {
+        background-image: url(~assets/img/gitlab.svg);
+      }
     }
   }
-}
 </style>

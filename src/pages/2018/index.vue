@@ -177,23 +177,23 @@
 </template>
 
 <script>
-import Heading from '~/components/Heading.vue'
-import PageImage from '~/components/PageImage.vue'
-import PageSection from '~/components/PageSection.vue'
-import Paragraph from '~/components/Paragraph.vue'
+  import Heading from '~/components/Heading.vue'
+  import PageImage from '~/components/PageImage.vue'
+  import PageSection from '~/components/PageSection.vue'
+  import Paragraph from '~/components/Paragraph.vue'
 
-export default {
-  layout: 'previous/2018',
+  export default {
+    layout: 'previous/2018',
 
-  head: {
-    title: 'Vue.js London 2018 | Summary',
-  },
+    components: {
+      Heading,
+      PageImage,
+      PageSection,
+      Paragraph,
+    },
 
-  components: {
-    Heading,
-    PageImage,
-    PageSection,
-    Paragraph,
-  },
-}
+    head: {
+      title: 'Vue.js London 2018 | Summary',
+    },
+  }
 </script>

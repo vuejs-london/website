@@ -180,19 +180,18 @@
 </template>
 
 <script>
-import Heading from '~/components/Heading.vue'
-import PageSection from '~/components/PageSection'
-import Paragraph from '~/components/Paragraph'
+  import Heading from '~/components/Heading.vue'
+  import PageSection from '~/components/PageSection'
+  import Paragraph from '~/components/Paragraph'
 
-export default {
-  head: {
-    title: 'Vue.js London 2019 | Terms and Conditions',
-  },
-
-  components: {
-    Heading,
-    PageSection,
-    Paragraph,
-  },
-}
+  export default {
+    components: {
+      Heading,
+      PageSection,
+      Paragraph,
+    },
+    head: {
+      title: 'Vue.js London 2019 | Terms and Conditions',
+    },
+  }
 </script>

@@ -46,7 +46,7 @@
         address="The O2, Peninsula Square, London SE10 0DX"
         image="/img/venue/cineworld-screen.jpg"
         url="https://www.google.com/maps/place/Cineworld+Cinema+London+O2+Greenwich/@51.5031809,0.0044136,15z/data=!4m2!3m1!1s0x0:0xb3ca4f4fde6ca073?sa=X&ved=2ahUKEwiOnv2nga_jAhWbTRUIHZyMCloQ_BIwC3oECA8QCA"
-        date="04 October 2019"
+        date="15 October 2020 (TBC)"
       />
 
       <div class="u-clearfix">
@@ -99,7 +99,7 @@
         address="The O2, Peninsula Square, London SE10 0DX"
         image="/img/venue/hollywood-bowl-bowling.jpg"
         url="https://www.google.com/maps/place/Hollywood+Bowl+at+the+O2/@51.50225,0.0041185,15z/data=!4m2!3m1!1s0x0:0x783bd7fc49f211d9?sa=X&ved=2ahUKEwi_iZOD5crjAhUOYsAKHUVEC1oQ_BIwFXoECA0QCA"
-        date="19:30 - 04 October 2019"
+        date="15 October 2020 (TBC)"
       />
 
       <div class="u-clearfix">
@@ -139,66 +139,46 @@
           participants must work together to escape a horrifying fate. Never enter alone.
         </paragraph>
       </div>
-
-      <heading level="2" variant="block">
-        Workshop venue
-      </heading>
-      <location
-        name="CCT Venues"
-        address="193 Marsh Wall, Isle of Dogs, London E14 9RS"
-        image="/img/venue/cct-venues.jpg"
-        url="https://www.google.com/maps/place/CCT+Venues-Docklands/@51.5006797,-0.0170056,17z/data=!3m1!4b1!4m5!3m4!1s0x487602bba15e6c91:0x674d16e7ec0ae32c!8m2!3d51.5006797!4d-0.0148169"
-        date="05 October 2019"
-      />
-      <paragraph>
-        Our workshop venue is nearby of the Conference Venue, and you can access the workshop venue
-        via the Canary Wharf station or South Quay.
-      </paragraph>
-      <paragraph>
-        The workshop venue is a relaxed modern venue, perfect for a full day of learning. After the
-        workshops, there is plenty to do, with restaurants and bars a short walk away.
-      </paragraph>
     </page-section>
   </main>
 </template>
 
 <script>
-import FormButton from '~/components/FormButton.vue'
-import Heading from '~/components/Heading.vue'
-import Location from '~/components/Location.vue'
-import PageImage from '~/components/PageImage.vue'
-import PageSection from '~/components/PageSection.vue'
-import Paragraph from '~/components/Paragraph.vue'
+  import FormButton from '~/components/FormButton.vue'
+  import Heading from '~/components/Heading.vue'
+  import Location from '~/components/Location.vue'
+  import PageImage from '~/components/PageImage.vue'
+  import PageSection from '~/components/PageSection.vue'
+  import Paragraph from '~/components/Paragraph.vue'
 
-export default {
-  head: {
-    title: 'Vue.js London 2019 | Diversity',
-  },
-
-  components: {
-    FormButton,
-    Heading,
-    Location,
-    PageImage,
-    PageSection,
-    Paragraph,
-  },
-}
+  export default {
+    components: {
+      FormButton,
+      Heading,
+      Location,
+      PageImage,
+      PageSection,
+      Paragraph,
+    },
+    head: {
+      title: 'Vue.js London 2019 | Diversity',
+    },
+  }
 </script>
 
 <style lang="postcss" scoped>
-.p__content-right {
-  width: 50%;
-  margin-top: 0;
-  margin-left: var(--grid-four);
-  float: right;
-}
-
-.p__location-buttons {
-  @media (--phablet-medium) {
-    display: grid;
-    grid-column-gap: var(--grid-two);
-    grid-template-columns: 1fr 1fr;
+  .p__content-right {
+    width: 50%;
+    margin-top: 0;
+    margin-left: var(--grid-four);
+    float: right;
   }
-}
+
+  .p__location-buttons {
+    @media (--phablet-medium) {
+      display: grid;
+      grid-column-gap: var(--grid-two);
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 </style>

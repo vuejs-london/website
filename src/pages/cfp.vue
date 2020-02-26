@@ -35,25 +35,24 @@
 </template>
 
 <script>
-import FormButton from '~/components/FormButton.vue'
-import Heading from '~/components/Heading.vue'
-import List from '~/components/List.vue'
-import ListItem from '~/components/ListItem.vue'
-import PageSection from '~/components/PageSection.vue'
-import Paragraph from '~/components/Paragraph.vue'
+  import FormButton from '~/components/FormButton.vue'
+  import Heading from '~/components/Heading.vue'
+  import List from '~/components/List.vue'
+  import ListItem from '~/components/ListItem.vue'
+  import PageSection from '~/components/PageSection.vue'
+  import Paragraph from '~/components/Paragraph.vue'
 
-export default {
-  head: {
-    title: 'Vue.js London 2019 | Diversity',
-  },
-
-  components: {
-    FormButton,
-    Heading,
-    List,
-    ListItem,
-    PageSection,
-    Paragraph,
-  },
-}
+  export default {
+    components: {
+      FormButton,
+      Heading,
+      List,
+      ListItem,
+      PageSection,
+      Paragraph,
+    },
+    head: {
+      title: 'Vue.js London 2019 | Diversity',
+    },
+  }
 </script>

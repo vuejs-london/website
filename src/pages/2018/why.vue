@@ -121,9 +121,9 @@
 </template>
 
 <script>
-export default {
-  head: {
-    title: 'Vue.js London 2018 | Convince me',
-  },
-}
+  export default {
+    head: {
+      title: 'Vue.js London 2018 | Convince me',
+    },
+  }
 </script>

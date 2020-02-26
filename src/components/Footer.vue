@@ -50,61 +50,61 @@
 </template>
 
 <script>
-import Anchor from '~/components/Anchor.vue'
-import Heading from '~/components/Heading.vue'
-import List from '~/components/List.vue'
-import ListItem from '~/components/ListItem.vue'
-import PageSection from '~/components/PageSection.vue'
+  import Anchor from '~/components/Anchor.vue'
+  import Heading from '~/components/Heading.vue'
+  import List from '~/components/List.vue'
+  import ListItem from '~/components/ListItem.vue'
+  import PageSection from '~/components/PageSection.vue'
 
-export default {
-  components: {
-    Anchor,
-    Heading,
-    List,
-    ListItem,
-    PageSection,
-  },
-
-  props: {
-    links: {
-      type: Array, // AnchorProps
-      default: () => [],
+  export default {
+    components: {
+      Anchor,
+      Heading,
+      List,
+      ListItem,
+      PageSection,
     },
-  },
-}
+
+    props: {
+      links: {
+        type: Array, // AnchorProps
+        default: () => [],
+      },
+    },
+  }
 </script>
 
 <style lang="postcss">
-.c-footer {
-  padding-top: var(--grid-four);
-  padding-bottom: calc(var(--grid-ten) * 2);
-  border-top: 1px solid var(--color-grey--light);
-  margin-top: var(--grid-four);
-  background: var(--color-white);
-
-  &__bottom {
+  .c-footer {
     padding-top: var(--grid-four);
-    text-align: center;
-  }
+    padding-bottom: calc(var(--grid-ten) * 2);
+    border-top: 1px solid var(--color-grey--light);
+    margin-top: var(--grid-four);
+    background: var(--color-white);
 
-  &__links {
-    padding-top: var(--grid-two);
-  }
-
-  &__copyright {
-    padding-top: var(--grid-two);
-    color: var(--color-text--light);
-  }
-
-  @media (--tablet-small) {
-    &__top {
-      display: flex;
-      justify-content: space-around;
+    &__bottom {
+      padding-top: var(--grid-four);
+      text-align: center;
     }
 
     &__links {
-      padding-top: initial;
+      padding-top: var(--grid-two);
+    }
+
+    &__copyright {
+      padding-top: var(--grid-two);
+      color: var(--color-text--light);
+    }
+
+    @media (--tablet-small) {
+      &__top {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      &__links {
+        padding-top: initial;
+      }
     }
   }
-}
 </style>

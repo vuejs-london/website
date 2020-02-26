@@ -82,13 +82,13 @@
 </template>
 
 <script>
-import Speaker from '~/components/Speaker'
-import SpeakerList from '~/components/SpeakerList'
+  import Speaker from '~/components/Speaker'
+  import SpeakerList from '~/components/SpeakerList'
 
-export default {
-  components: {
-    Speaker,
-    SpeakerList,
-  },
-}
+  export default {
+    components: {
+      Speaker,
+      SpeakerList,
+    },
+  }
 </script>

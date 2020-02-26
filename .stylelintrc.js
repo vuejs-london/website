@@ -1,9 +1,4 @@
-const base = {
-  'custom-syntax': 'postcss-html',
-}
-
 const compat = {
-  ...base,
   plugins: ['stylelint-no-unsupported-browser-features'],
   rules: {
     'plugin/no-unsupported-browser-features': [

@@ -50,25 +50,24 @@
 </template>
 
 <script>
-import FormButton from '~/components/FormButton.vue'
-import Heading from '~/components/Heading.vue'
-import PageSection from '~/components/PageSection.vue'
-import Paragraph from '~/components/Paragraph.vue'
-import Sponsor from '~/components/Sponsor.vue'
-import SponsorGroup from '~/components/SponsorGroup.vue'
+  import FormButton from '~/components/FormButton.vue'
+  import Heading from '~/components/Heading.vue'
+  import PageSection from '~/components/PageSection.vue'
+  import Paragraph from '~/components/Paragraph.vue'
+  import Sponsor from '~/components/Sponsor.vue'
+  import SponsorGroup from '~/components/SponsorGroup.vue'
 
-export default {
-  head: {
-    title: 'Vue.js London 2019 | Diversity',
-  },
-
-  components: {
-    FormButton,
-    Heading,
-    PageSection,
-    Paragraph,
-    Sponsor,
-    SponsorGroup,
-  },
-}
+  export default {
+    components: {
+      FormButton,
+      Heading,
+      PageSection,
+      Paragraph,
+      Sponsor,
+      SponsorGroup,
+    },
+    head: {
+      title: 'Vue.js London 2019 | Diversity',
+    },
+  }
 </script>

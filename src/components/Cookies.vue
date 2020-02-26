@@ -9,7 +9,7 @@
         <anchor to="/privacy-policy">Privacy Policy</anchor>.
       </p>
       <form-button @click="accept">Accept</form-button>
-      <form-button @click="completed = true" variant="dark">
+      <form-button variant="dark" @click="completed = true">
         Close
       </form-button>
     </div>
@@ -17,53 +17,53 @@
 </template>
 
 <script>
-import Anchor from '~/components/Anchor.vue'
-import FormButton from '~/components/FormButton.vue'
+  import Anchor from '~/components/Anchor.vue'
+  import FormButton from '~/components/FormButton.vue'
 
-export default {
-  components: {
-    Anchor,
-    FormButton,
-  },
-
-  data() {
-    return {
-      completed: true,
-    }
-  },
-
-  created() {
-    if (process.BROWSER_BUILD) {
-      this.completed = !!this.$cookie.get('cookies-accepted')
-    }
-  },
-
-  methods: {
-    accept() {
-      this.$cookie.set('cookies-accepted', true)
-      this.completed = true
+  export default {
+    components: {
+      Anchor,
+      FormButton,
     },
-  },
-}
+
+    data() {
+      return {
+        completed: true,
+      }
+    },
+
+    created() {
+      if (process.BROWSER_BUILD) {
+        this.completed = !!this.$cookie.get('cookies-accepted')
+      }
+    },
+
+    methods: {
+      accept() {
+        this.$cookie.set('cookies-accepted', true)
+        this.completed = true
+      },
+    },
+  }
 </script>
 
 <style lang="postcss">
-.c-cookies {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: var(--grid-one) 0;
-  background: var(--color-white);
+  .c-cookies {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: var(--grid-one) 0;
+    background: var(--color-white);
 
-  &__container {
-    width: var(--page-width);
-    margin: 0 auto;
-  }
+    &__container {
+      width: var(--page-width);
+      margin: 0 auto;
+    }
 
-  &__message {
-    display: inline-block;
-    padding: 0 var(--grid-one);
+    &__message {
+      display: inline-block;
+      padding: 0 var(--grid-one);
+    }
   }
-}
 </style>

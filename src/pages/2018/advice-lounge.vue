@@ -65,25 +65,25 @@
 </template>
 
 <script>
-import Heading from '~/components/Heading.vue'
-import PageSection from '~/components/PageSection.vue'
-import Paragraph from '~/components/Paragraph.vue'
-import Speaker from '~/components/Speaker'
-import SpeakerList from '~/components/SpeakerList'
+  import Heading from '~/components/Heading.vue'
+  import PageSection from '~/components/PageSection.vue'
+  import Paragraph from '~/components/Paragraph.vue'
+  import Speaker from '~/components/Speaker'
+  import SpeakerList from '~/components/SpeakerList'
 
-export default {
-  layout: 'previous/2018',
+  export default {
+    layout: 'previous/2018',
 
-  head: {
-    title: 'Vue.js London 2018 | Advice Lounge',
-  },
+    components: {
+      Heading,
+      PageSection,
+      Paragraph,
+      Speaker,
+      SpeakerList,
+    },
 
-  components: {
-    Heading,
-    PageSection,
-    Paragraph,
-    Speaker,
-    SpeakerList,
-  },
-}
+    head: {
+      title: 'Vue.js London 2018 | Advice Lounge',
+    },
+  }
 </script>

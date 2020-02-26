@@ -13,20 +13,20 @@
 </template>
 
 <script>
-import FormButton from '~/components/FormButton.vue'
-import Heading from '~/components/Heading.vue'
+  import FormButton from '~/components/FormButton.vue'
+  import Heading from '~/components/Heading.vue'
 
-export default {
-  components: {
-    FormButton,
-    Heading,
-  },
-
-  props: {
-    error: {
-      type: Object,
-      default: null,
+  export default {
+    components: {
+      FormButton,
+      Heading,
     },
-  },
-}
+
+    props: {
+      error: {
+        type: Object,
+        default: null,
+      },
+    },
+  }
 </script>

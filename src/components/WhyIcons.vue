@@ -52,19 +52,19 @@
 </template>
 
 <script>
-import IconBlock from '~/components/IconBlock'
+  import IconBlock from '~/components/IconBlock'
 
-export default {
-  components: {
-    IconBlock,
-  },
-}
+  export default {
+    components: {
+      IconBlock,
+    },
+  }
 </script>
 
 <style lang="postcss">
-.c-why-icons {
-  display: grid;
-  grid-gap: var(--grid-two);
-  grid-template-columns: repeat(auto-fill, minmax(calc(var(--grid-one) * 22), 1fr));
-}
+  .c-why-icons {
+    display: grid;
+    grid-gap: var(--grid-two);
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--grid-one) * 22), 1fr));
+  }
 </style>

@@ -5,38 +5,38 @@
 </template>
 
 <script>
-import Anchor from '~/components/Anchor'
-export default {
-  components: {
-    Anchor,
-  },
+  import Anchor from '~/components/Anchor'
+  export default {
+    components: {
+      Anchor,
+    },
 
-  props: {
-    href: {
-      type: String,
-      required: true,
+    props: {
+      href: {
+        type: String,
+        required: true,
+      },
+      image: {
+        type: String,
+        required: true,
+      },
+      title: {
+        type: String,
+        required: true,
+      },
     },
-    image: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-  },
-}
+  }
 </script>
 
 <style lang="postcss">
-.c-sponsor {
-  width: 90%;
-  box-sizing: border-box;
-  text-align: center;
+  .c-sponsor {
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
 
-  &__image {
-    width: 100%;
-    object-fit: contain;
+    &__image {
+      width: 100%;
+      object-fit: contain;
+    }
   }
-}
 </style>

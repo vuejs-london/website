@@ -165,25 +165,25 @@
 </template>
 
 <script>
-import FormButton from '~/components/FormButton'
-import Heading from '~/components/Heading'
-import PageSection from '~/components/PageSection'
-import Sponsor from '~/components/Sponsor'
-import SponsorGroup from '~/components/SponsorGroup'
+  import FormButton from '~/components/FormButton'
+  import Heading from '~/components/Heading'
+  import PageSection from '~/components/PageSection'
+  import Sponsor from '~/components/Sponsor'
+  import SponsorGroup from '~/components/SponsorGroup'
 
-export default {
-  layout: 'previous/2018',
+  export default {
+    layout: 'previous/2018',
 
-  components: {
-    FormButton,
-    Heading,
-    PageSection,
-    Sponsor,
-    SponsorGroup,
-  },
+    components: {
+      FormButton,
+      Heading,
+      PageSection,
+      Sponsor,
+      SponsorGroup,
+    },
 
-  head: {
-    title: 'Vue.js London 2018 | Sponsors',
-  },
-}
+    head: {
+      title: 'Vue.js London 2018 | Sponsors',
+    },
+  }
 </script>

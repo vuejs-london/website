@@ -191,23 +191,22 @@
 </template>
 
 <script>
-import Heading from '~/components/Heading.vue'
-import List from '~/components/List'
-import ListItem from '~/components/ListItem'
-import PageSection from '~/components/PageSection'
-import Paragraph from '~/components/Paragraph'
+  import Heading from '~/components/Heading.vue'
+  import List from '~/components/List'
+  import ListItem from '~/components/ListItem'
+  import PageSection from '~/components/PageSection'
+  import Paragraph from '~/components/Paragraph'
 
-export default {
-  head: {
-    title: 'Vue.js London 2019 | Code of Conduct',
-  },
-
-  components: {
-    Heading,
-    List,
-    ListItem,
-    PageSection,
-    Paragraph,
-  },
-}
+  export default {
+    components: {
+      Heading,
+      List,
+      ListItem,
+      PageSection,
+      Paragraph,
+    },
+    head: {
+      title: 'Vue.js London 2019 | Code of Conduct',
+    },
+  }
 </script>

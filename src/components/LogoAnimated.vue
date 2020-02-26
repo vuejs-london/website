@@ -5,7 +5,7 @@
     viewBox="0 0 2058.71 826.05"
     class="svg c-logo-animated--hidden"
   >
-    <animation-frame @frame="start" v-if="!started" />
+    <animation-frame v-if="!started" @frame="start" />
     <g id="firstbird" class="bird">
       <path
         class="wing_b"
@@ -502,236 +502,244 @@
 </template>
 
 <script>
-import { Elastic, Sine, TimelineMax, TweenMax } from 'gsap/umd/TweenMax'
-import AnimationFrame from '~/components/abstract/AnimationFrame'
+  import { Elastic, Sine, TimelineMax, TweenMax } from 'gsap/umd/TweenMax'
+  import AnimationFrame from '~/components/abstract/AnimationFrame'
 
-export default {
-  components: {
-    AnimationFrame,
-  },
-
-  data() {
-    return {
-      started: false,
-    }
-  },
-
-  methods: {
-    start() {
-      this.started = true
-      this.wordsIn()
-
-      const master = new TimelineMax()
-      master.add(this.flyIn())
-      master.add(this.comeTogether(), 'ct')
-
-      this.$el.classList.remove('c-logo-animated--hidden')
-      this.birdsTimeline()
+  export default {
+    components: {
+      AnimationFrame,
     },
 
-    wordsIn() {
-      TweenMax.set('#words', {
-        visibility: 'visible',
-      })
+    data() {
+      return {
+        started: false,
+      }
     },
 
-    // first bird flies in
-    flyIn() {
-      const timeline = new TimelineMax()
+    methods: {
+      start() {
+        this.started = true
+        this.wordsIn()
 
-      timeline.add('start2')
+        const master = new TimelineMax()
+        master.add(this.flyIn())
+        master.add(this.comeTogether(), 'ct')
 
-      timeline.fromTo(
-        '#firstbird',
-        7,
-        { x: -100, opacity: 0 },
-        {
-          bezier: {
-            type: 'soft',
-            values: [{ x: 200, y: -200 }, { x: 800, y: -800 }, { x: 900, y: -700 }],
+        this.$el.classList.remove('c-logo-animated--hidden')
+        this.birdsTimeline()
+      },
+
+      wordsIn() {
+        TweenMax.set('#words', {
+          visibility: 'visible',
+        })
+      },
+
+      // first bird flies in
+      flyIn() {
+        const timeline = new TimelineMax()
+
+        timeline.add('start2')
+
+        timeline.fromTo(
+          '#firstbird',
+          7,
+          { x: -100, opacity: 0 },
+          {
+            bezier: {
+              type: 'soft',
+              values: [
+                { x: 200, y: -200 },
+                { x: 800, y: -800 },
+                { x: 900, y: -700 },
+              ],
+            },
+            ease: Sine.easeOut,
+            opacity: 1,
           },
-          ease: Sine.easeOut,
-          opacity: 1,
-        },
-        'start2',
-      )
+          'start2',
+        )
 
-      timeline.fromTo(
-        '#secondbird',
-        6,
-        { x: 200, opacity: 0 },
-        {
-          bezier: {
-            type: 'soft',
-            values: [{ x: -200, y: -200 }, { x: -800, y: -800 }, { x: -700, y: -700 }],
+        timeline.fromTo(
+          '#secondbird',
+          6,
+          { x: 200, opacity: 0 },
+          {
+            bezier: {
+              type: 'soft',
+              values: [
+                { x: -200, y: -200 },
+                { x: -800, y: -800 },
+                { x: -700, y: -700 },
+              ],
+            },
+            ease: Sine.easeOut,
+            opacity: 1,
           },
-          ease: Sine.easeOut,
-          opacity: 1,
-        },
-        'start2+=3',
-      )
+          'start2+=3',
+        )
 
-      return timeline
+        return timeline
+      },
+
+      birdsTimeline() {
+        const timeline = new TimelineMax({
+          repeat: 17,
+          yoyo: true,
+        })
+
+        timeline.add('start')
+        timeline.to(
+          '#firstbird .wing_b, #firstbird .wing_f',
+          1,
+          {
+            scaleY: -0.75,
+            rotation: -45,
+            y: -20,
+            transformOrigin: '50% 90%',
+          },
+          'start',
+        )
+
+        timeline.to(
+          '#secondbird .wing_b, #secondbird .wing_f',
+          1,
+          {
+            scaleY: -0.75,
+            rotation: 45,
+            y: -20,
+            transformOrigin: '50% 90%',
+          },
+          'start',
+        )
+
+        timeline.to('.body, .head', 1, { y: -20 }, 'start')
+
+        timeline.timeScale(2)
+        return timeline
+      },
+
+      comeTogether() {
+        const timline = new TimelineMax()
+
+        timline.add('start3')
+
+        // common
+        timline.to(
+          '.bird .wing_b, .bird .head, .bird .body',
+          0.25,
+          {
+            opacity: 0,
+            ease: Sine.easeIn,
+          },
+          'start3',
+        )
+
+        // first
+        timline.to(
+          '#firstbird .wing_f',
+          2,
+          {
+            attr: {
+              d: 'M50 635 l -60 0 l 28 -60 Z',
+            },
+            scale: 0.85,
+          },
+          'start3',
+        )
+
+        timline.to(
+          '#firstbird .wing_f',
+          2,
+          {
+            rotation: 180,
+            y: 630,
+            x: 185,
+            opacity: 0.5,
+            transformOrigin: '50% 50%',
+          },
+          'start3+=0.6',
+        )
+        // first
+
+        // second
+        timline.to(
+          '#secondbird .wing_f',
+          1,
+          {
+            attr: {
+              d: 'M 1930 550 l 25 50 L 1900 600 Z',
+            },
+          },
+          'start3',
+        )
+
+        timline.to(
+          '#secondbird .wing_f',
+          1,
+          {
+            rotation: 180,
+            y: 635,
+            x: -180,
+            opacity: 0.5,
+            transformOrigin: '50% 50%',
+          },
+          'start3+=0.6',
+        )
+        // second
+
+        timline.staggerFrom(
+          '.vlogo polygon',
+          2.8,
+          {
+            cycle: {
+              y: i => i * -25,
+              x: [200, -200, -700, 700],
+            },
+            rotation: 360,
+            scale: 0.5,
+            opacity: 0,
+            ease: Elastic.easeOut.config(1, 0.65),
+          },
+          0.01,
+          'start3+=1',
+        )
+
+        timline.staggerFrom(
+          '.vlogo polygon',
+          2.8,
+          {
+            cycle: {
+              fill: ['white', '#34495F', '#45B280'],
+            },
+            ease: Sine.easeIn,
+          },
+          0.01,
+          'start3',
+        )
+
+        timline.staggerFromTo(
+          '#words g',
+          0.7,
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+            ease: Sine.easeOut,
+          },
+          0.2,
+          'start3+=5.5',
+        )
+
+        return timline
+      },
     },
-
-    birdsTimeline() {
-      const timeline = new TimelineMax({
-        repeat: 17,
-        yoyo: true,
-      })
-
-      timeline.add('start')
-      timeline.to(
-        '#firstbird .wing_b, #firstbird .wing_f',
-        1,
-        {
-          scaleY: -0.75,
-          rotation: -45,
-          y: -20,
-          transformOrigin: '50% 90%',
-        },
-        'start',
-      )
-
-      timeline.to(
-        '#secondbird .wing_b, #secondbird .wing_f',
-        1,
-        {
-          scaleY: -0.75,
-          rotation: 45,
-          y: -20,
-          transformOrigin: '50% 90%',
-        },
-        'start',
-      )
-
-      timeline.to('.body, .head', 1, { y: -20 }, 'start')
-
-      timeline.timeScale(2)
-      return timeline
-    },
-
-    comeTogether() {
-      const timline = new TimelineMax()
-
-      timline.add('start3')
-
-      // common
-      timline.to(
-        '.bird .wing_b, .bird .head, .bird .body',
-        0.25,
-        {
-          opacity: 0,
-          ease: Sine.easeIn,
-        },
-        'start3',
-      )
-
-      // first
-      timline.to(
-        '#firstbird .wing_f',
-        2,
-        {
-          attr: {
-            d: 'M50 635 l -60 0 l 28 -60 Z',
-          },
-          scale: 0.85,
-        },
-        'start3',
-      )
-
-      timline.to(
-        '#firstbird .wing_f',
-        2,
-        {
-          rotation: 180,
-          y: 630,
-          x: 185,
-          opacity: 0.5,
-          transformOrigin: '50% 50%',
-        },
-        'start3+=0.6',
-      )
-      // first
-
-      // second
-      timline.to(
-        '#secondbird .wing_f',
-        1,
-        {
-          attr: {
-            d: 'M 1930 550 l 25 50 L 1900 600 Z',
-          },
-        },
-        'start3',
-      )
-
-      timline.to(
-        '#secondbird .wing_f',
-        1,
-        {
-          rotation: 180,
-          y: 635,
-          x: -180,
-          opacity: 0.5,
-          transformOrigin: '50% 50%',
-        },
-        'start3+=0.6',
-      )
-      // second
-
-      timline.staggerFrom(
-        '.vlogo polygon',
-        2.8,
-        {
-          cycle: {
-            y: i => i * -25,
-            x: [200, -200, -700, 700],
-          },
-          rotation: 360,
-          scale: 0.5,
-          opacity: 0,
-          ease: Elastic.easeOut.config(1, 0.65),
-        },
-        0.01,
-        'start3+=1',
-      )
-
-      timline.staggerFrom(
-        '.vlogo polygon',
-        2.8,
-        {
-          cycle: {
-            fill: ['white', '#34495F', '#45B280'],
-          },
-          ease: Sine.easeIn,
-        },
-        0.01,
-        'start3',
-      )
-
-      timline.staggerFromTo(
-        '#words g',
-        0.7,
-        {
-          autoAlpha: 0,
-        },
-        {
-          autoAlpha: 1,
-          ease: Sine.easeOut,
-        },
-        0.2,
-        'start3+=5.5',
-      )
-
-      return timline
-    },
-  },
-}
+  }
 </script>
 
 <style lang="postcss">
-.c-logo-animated--hidden {
-  opacity: 0;
-}
+  .c-logo-animated--hidden {
+    opacity: 0;
+  }
 </style>
