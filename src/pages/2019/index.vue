@@ -29,16 +29,14 @@
 
   const images = new Array(394).fill('').map((_, index) => `${index + 1}`.padStart(4, '0'))
 
-  const imagesSmall = images.map(value => `/2019/images/gallery/10-percent/${value}.jpg`)
-  const imagesFull = images.map(value => `/2019/images/gallery/original/${value}.jpg`)
+  const imagesSmall = images.map((value) => `/2019/images/gallery/10-percent/${value}.jpg`)
+  const imagesFull = images.map((value) => `/2019/images/gallery/original/${value}.jpg`)
 
   if (process.client) {
     Vue.use(Lightbox)
   }
 
   export default {
-    layout: 'previous/2018',
-
     components: {
       Heading,
       PageImage,
@@ -66,7 +64,7 @@
     },
 
     head: {
-      title: 'Vue.js London 2018 | Gallery',
+      title: 'Vue.js London 2019',
     },
   }
 </script>

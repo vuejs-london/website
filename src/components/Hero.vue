@@ -3,21 +3,14 @@
     <page-section class="c-hero__logo">
       <logo-animated />
     </page-section>
-    <div class="c-hero__banner">
-      <heading class="u-visually-hidden">Vue.js London</heading>
-      <heading level="2" class="c-hero__location" variant="style-only">Cineworld at the O2</heading>
-      <heading level="3" class="c-hero__date" variant="style-only">4-5 October 2019</heading>
-    </div>
   </div>
 </template>
 
 <script>
-  import Heading from '~/components/Heading'
   import PageSection from '~/components/PageSection'
 
   export default {
     components: {
-      Heading,
       LogoAnimated: () => import('~/components/LogoAnimated'),
       PageSection,
     },

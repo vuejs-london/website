@@ -1,7 +1,7 @@
 <template>
   <div>
     <navbar :links="navbarLinks"></navbar>
-    <banner class="p__banner">2020 CFP Open! Apply now!</banner>
+    <banner class="p__banner">COVID UPDATE</banner>
     <nuxt class="p__content"></nuxt>
     <footer-section :links="footerLinks"></footer-section>
     <cookies />
@@ -23,9 +23,6 @@
 
     created() {
       this.navbarLinks = [
-        { to: '/cfp', text: 'CFP' },
-        { to: '/tickets', text: 'tickets' },
-        { to: '/guide', text: 'Guide' },
         {
           href: 'https://www.meetup.com/vuejs-london/',
           rel: 'noopener',
@@ -66,10 +63,6 @@
         { to: '/2019', text: '2019' },
         { to: '/2018', text: '2018' },
 
-        { to: '/cfp', text: 'CFP' },
-        { to: '/tickets', text: 'Tickets' },
-        { to: '/guide', text: 'Guide' },
-        { to: '/diversity', text: 'Diversity' },
         { to: '/code-of-conduct', text: 'Code of Conduct' },
         { to: '/terms-and-conditions', text: 'Terms and Conditions' },
         { to: '/privacy-policy', text: 'Privacy Policy' },

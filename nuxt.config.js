@@ -119,15 +119,6 @@ export default {
       },
     },
     postcss: {
-      order: [
-        'postcss-import',
-        'postcss-nested-ancestors',
-        'postcss-nested',
-        'postcss-extend',
-        'postcss-preset-env',
-        'postcss-calc',
-      ],
-
       plugins: {
         'postcss-import': { path: './src' },
         'postcss-nested-ancestors': {},
